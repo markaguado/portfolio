@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mark Aguado</title>
+	<!-- fullpageeCSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css">
+	<!-- js -->
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-light">
+	<a class="navbar-brand" href="#firstSection">Mark Aguado</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		<span class="navbar-toggler-icon"></span>
+		<span class="navbar-toggler-icon"></span>
+
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav">
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Features</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Pricing</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+</header>
+
+<div id="fullpage">
+	<div class="section s1" >
+		<h1>Lorem Ipsum</h1>
+		<h4>Rauh - Welt</h4>
+		<div class="scrolldown">
+			<p class="scroll">scrolldown</p>
+		</div>
+	</div>
+	<div class="section s2">Some section</div>
+	<div class="section s3">Some section</div>
+	<div class="section s4">Contact Us</div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
+<script type="text/javascript">
+
+
+
+
+new fullpage('#fullpage', {
+	//options here
+	autoScrolling:true,
+	scrollHorizontally: true,
+	// sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', '#000'],
+
+	// sectionSelector: '.vertical-scrolling',
+	// slideSelector: '.horizontal-scrolling',
+	navigation: true,
+	slidesNavigation: true,
+	controlArrows: false,
+	anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection'],
+	menu: '#menu'
+});
+
+
+</script>
+<script type="text/javascript">
+// $(document).ready(function() { 
+// 	$('#fullpage').scroll(function() { 
+// 		alert("scroll happened"); 
+// 	}); 
+// 	// $('.section').on("scroll", function(){
+// 	// 	alert("the fuck");
+// 	// });
+// }); 
+
+
+// $(window).scroll(function() {    
+//    alert("carlos Gwapo");
+
+//    if($('.s1').hasClass('fp-completely')){
+// 	} else{
+
+// 	}
+// });
+
+</script>
+</body>
+</html>

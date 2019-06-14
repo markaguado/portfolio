@@ -1,0 +1,90 @@
+body {
+  background-image: url("https://images.pexels.com/photos/1480690/pexels-photo-1480690.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 100vh !important; }
+  body header {
+    width: 100%;
+    position: fixed;
+    z-index: 1; }
+    body header nav {
+      background-color: transparent; }
+      body header nav a {
+        color: #fff !important; }
+      body header nav .navbar-brand {
+        letter-spacing: 5px; }
+      body header nav .navbar-toggler {
+        outline: none !important;
+        padding: 0.25rem 0.25rem; }
+      body header nav .navbar-toggler-icon {
+        display: block;
+        content: "";
+        width: 30px;
+        height: 2px;
+        background: #fff;
+        position: relative;
+        margin: 8px auto;
+        transition: 0.5s ease; }
+      body header nav .navbar-toggler-icon:nth-child(even) {
+        background: #1CDCFA; }
+      body header nav .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:nth-child(even) {
+        transform: rotate(45deg);
+        width: 45px;
+        transition: 0.5s ease; }
+      body header nav .navbar-collapse .navbar-nav .nav-link {
+        font-size: 1.25rem; }
+
+#fullpage .section {
+  color: #fff; }
+#fullpage .s1, #fullpage .s2, #fullpage .s3, #fullpage .s4 {
+  text-align: center; }
+  #fullpage .s1 h1, #fullpage .s2 h1, #fullpage .s3 h1, #fullpage .s4 h1 {
+    font-weight: 700; }
+  #fullpage .s1 h4, #fullpage .s2 h4, #fullpage .s3 h4, #fullpage .s4 h4 {
+    font-weight: 400; }
+#fullpage .s1 .scrolldown .scroll {
+  text-transform: uppercase;
+  position: fixed;
+  font-size: 10px;
+  bottom: 80px;
+  left: 30px;
+  line-height: 1;
+  letter-spacing: 0.3em;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  color: #fff;
+  z-index: 100; }
+  #fullpage .s1 .scrolldown .scroll:after {
+    content: "";
+    width: 2px;
+    height: 64px;
+    background: #1CDCFA;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -80px; }
+
+#fp-nav {
+  right: unset !important;
+  left: 30px !important; }
+  #fp-nav ul li {
+    height: 3px !important;
+    margin: 0 0 25px; }
+    #fp-nav ul li a.active span {
+      width: 45px !important;
+      background: #1CDCFA !important; }
+    #fp-nav ul li a span {
+      height: 3px !important;
+      width: 20px !important;
+      background: #fff !important;
+      border-radius: 0% !important; }
+
+.fp-slidesNav ul li a span {
+  background: #fff !important;
+  border-radius: 0% !important; }
+
+/*# sourceMappingURL=style.css.map */

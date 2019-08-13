@@ -1,107 +1,108 @@
+// color palette
+$darkblue: #202833
+$gray: #ECECEC
+$lightblue: #66FCF1
+$darkgreen: #46A29F
+$abo: #595957
+    
 body
-    background-image: url('https://images.pexels.com/photos/1480690/pexels-photo-1480690.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940')
-    background-size: cover
-    background-repeat: no-repeat
-    background-attachment: fixed
-    background-position: center center
-    height: 100vh !important
-    header
-        width: 100%
+    font-family: 'Roboto', sans-serif
+    .classy-header
+        background-color: $abo
+        z-index: 9999
         position: fixed
-        z-index: 1
         nav
-            background-color: transparent
-            a
-                color: #fff !important
-            .navbar-brand
-                letter-spacing: 5px
-            .navbar-toggler
-                // border-color: rgb(255, 255, 255) !important
-                outline: none !important
-                padding: .25rem 0.25rem
-            .navbar-toggler-icon
-                display: block
-                content: ""
-                width: 30px
-                height: 2px
-                background: #fff
-                position: relative
-                margin: 8px auto
-                transition: 0.5s ease
-            .navbar-toggler-icon:nth-child(even)
-                background: #1CDCFA
-            .navbar-toggler[aria-expanded="true"]
-                .navbar-toggler-icon:nth-child(even)
-                    transform: rotate(45deg)
-                    width: 45px
-                    transition: 0.5s ease
-            .navbar-collapse
+            >
+                a
+                    color: $gray
+            .collapse
                 .navbar-nav
-                    .nav-link
-                        font-size: 1.25rem
-
-                 
-
-#fullpage
-    .section
-        color: #fff
-    .s1, .s2, .s3, .s4
-        text-align: center
-        h1
-            font-weight: 700
-        h4
-            font-weight: 400
-    .s1
-        .scrolldown
-            
-            .scroll
-                text-transform: uppercase
-                position: fixed
-                font-size: 10px
-                bottom: 80px
-                left: 30px
-                line-height: 1
-                letter-spacing: 0.3em
-                -webkit-writing-mode: vertical-rl
-                -ms-writing-mode: tb-rl
-                writing-mode: vertical-rl
-                color: #fff
-                z-index: 100
-                &:after
+                    .nav-item
+                        >
+                            a
+                                color: $gray
+    header
+        background: transparent
+        display: block
+        position: fixed
+        z-index: 9999
+        nav
+            position: fixed
+            width: 100%
+            z-index: 9999
+            >
+                a
+                    color: #000
+                    font-weight: 800
+                a:hover
+                    color: $lightblue
+            .collapse
+                justify-content: flex-end !important
+                .navbar-nav
+                    .nav-item
+                        >
+                            a
+                                color: #000
+    .first__fold
+        background: $gray
+        height: 100vh
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-evenly
+        .row
+            margin: 0px
+            padding: 0
+            .page__numberholder
+                width: 12%
+                display: inline-block
+                .p__number
+                    margin: 0
+                    font-size: 45px
+                    color: $abo
+                .p__line
                     content: ""
-                    width: 2px
-                    height: 64px
-                    background: #1CDCFA
-                    position: absolute
+                    width: 4px
+                    height: 180px
+                    background: $abo
+                    position: relative
                     left: 0
                     right: 0
-                    margin: auto
-                    bottom: -80px
+                    top: 0px
+                    margin-left: 25px
+                    display: inline-block
+                .p__title
+                    text-transform: uppercase
+                    writing-mode: vertical-rl
+                    z-index: 100
+                    letter-spacing: 0.3em
+                    transform: rotate(180deg)
+                    color: $abo
+            .name__holder
+                width: 42%
+                .name
+                    font-size: 2em
+                    letter-spacing: 0.1em
+                    margin: 0
+                    line-height: 1.1
+                    color: $abo
+                    padding-top: 1em
+                .line
+                    content: ""
+                    width: 80px
+                    height: 5px
+                    background: $abo
+                    margin: 15px 0
+                .about__me
+                    width: 100%
+                    padding-top: 2em
+                    display: inline-block
+                    margin: 0
+                    color: $abo
+            .pic__holder
+                width: 42%
 
-#fp-nav
-    right: unset !important
-    left: 30px !important 
-    ul 
-        li 
-            height: 3px !important
-            margin: 0 0 25px
-            a.active 
-                span
-                    width: 45px !important
-                    background: #1CDCFA !important
-            a 
-                span
-                    height: 3px !important
-                    width: 20px !important
-                    background: #fff !important
-                    border-radius: 0% !important
-
-.fp-slidesNav 
-    ul 
-        li 
-            a 
-                span
-                    background: #fff !important
-                    border-radius: 0% !important
-
-
+    .second__fold
+        background-color: $abo
+        height: 100vh
+       

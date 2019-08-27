@@ -19,14 +19,14 @@ body
                     font-size: 25px
                     transition: 0.5s ease-out
                 a:hover
-                    color: $lightblue
+                    color: $gray
             .collapse
                 .navbar-nav
                     .nav-item
                         .nav-link
                             color: $gray
-                        .nav-link:hover
-                            color: $lightblue
+                        // .nav-link:hover
+                        //     color: $lightblue
             .navbar-toggler
                 outline: none !important
                 .animated-icon1 span
@@ -44,7 +44,10 @@ body
             >
                 a
                     color: $abo
-                    font-weight: 800
+                    font-weight: 700
+                a:hover
+                    color: $abo
+                
             .collapse
                 justify-content: flex-end !important
                 .navbar-nav
@@ -353,6 +356,8 @@ body
                 text-transform: uppercase
                 font-weight: 700
                 letter-spacing: 3px
+        .grid-item:first-child:hover
+            opacity: 1        
 
 
 .third__fold

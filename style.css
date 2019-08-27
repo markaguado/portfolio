@@ -10,11 +10,9 @@ body {
       font-size: 25px;
       transition: 0.5s ease-out; }
     body .classy-header nav > a:hover {
-      color: #66FCF1; }
+      color: #ECECEC; }
     body .classy-header nav .collapse .navbar-nav .nav-item .nav-link {
       color: #ECECEC; }
-    body .classy-header nav .collapse .navbar-nav .nav-item .nav-link:hover {
-      color: #66FCF1; }
     body .classy-header nav .navbar-toggler {
       outline: none !important; }
       body .classy-header nav .navbar-toggler .animated-icon1 span {
@@ -30,7 +28,9 @@ body {
       z-index: 9999; }
       body header nav > a {
         color: #595957;
-        font-weight: 800; }
+        font-weight: 700; }
+      body header nav > a:hover {
+        color: #595957; }
       body header nav .collapse {
         justify-content: flex-end !important; }
         body header nav .collapse .navbar-nav .nav-item .nav-link {
@@ -330,6 +330,8 @@ body {
         text-transform: uppercase;
         font-weight: 700;
         letter-spacing: 3px; }
+    #sample .grid__container .grid-item:first-child:hover {
+      opacity: 1; }
 
 .third__fold {
   background: #ECECEC;

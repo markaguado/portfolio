@@ -40,7 +40,7 @@
         });
         
         $(".view__all").click(function(){
-            $("#sample").toggle("fast");
+            $("#sample").toggle("1000");
             var scrollTo = $(this).attr("href");
             $('html, body').animate({ scrollTop: $(scrollTo).offset().top }, 'slow');
             return false;

@@ -307,14 +307,14 @@ body
                             color: $gray
                             text-decoration: none
                             opacity: 0.5
-                            transition: 0.3s ease-in
+                            transition: 0.3s ease
                         .portfolio__tab.active
                             opacity: 1
                             font-size: 25px
-                .view__all
-                    text-decoration: underline
-                    color: $gray
-                    text-transform: uppercase
+                // .view__all
+                //     text-decoration: underline
+                //     color: $gray
+                //     text-transform: uppercase
 
             .portfolio__images
                 width: 60%
@@ -328,7 +328,23 @@ body
                         width: 100%
                         >img
                             width: 100%
-                            transition: 0.3s ease-in
+                            transition: 0.3s ease
+
+.view__all
+    display: block
+    margin: 0 0 0 auto
+    text-transform: uppercase
+    color: $abo
+    text-decoration: underline
+    padding: 1em 0 
+    font-size: 20px
+    transition: 0.3s ease
+    letter-spacing: 3px
+    font-weight: 700
+.view__all:hover
+    color: $abo
+    font-size: 25px
+
 
 #sample
     background-color: $abo
@@ -346,22 +362,22 @@ body
             overflow: hidden
         .grid-item:hover
             opacity: 0.8
-        .grid-item:first-child
-            border: unset !important
-            grid-column: 1 / -1
-            height: 100px
-            display: flex
-            justify-content: center
-            align-items: flex-end
-            >p
-                margin: 0
-                color: $gray
-                font-size: 25px
-                text-transform: uppercase
-                font-weight: 700
-                letter-spacing: 3px
-        .grid-item:first-child:hover
-            opacity: 1        
+        // .grid-item:first-child
+        //     border: unset !important
+        //     grid-column: 1 / -1
+        //     height: 100px
+        //     display: flex
+        //     justify-content: center
+        //     align-items: flex-end
+        //     >p
+        //         margin: 0
+        //         color: $gray
+        //         font-size: 25px
+        //         text-transform: uppercase
+        //         font-weight: 700
+        //         letter-spacing: 3px
+        // .grid-item:first-child:hover
+        //     opacity: 1        
 
 
 .third__fold
@@ -543,93 +559,118 @@ body
                 margin: 15px auto
             .email-add
                 color: $abo
+            .font__awesome
+                padding-top: 1em
+                >a
+                    font-size: 30px
+                    color: $abo
+                    text-decoration: none
+                    transition: 0.5 ease
+                    &:hover
+                        color: blue
 
 
 @media (max-width: 767px)
-    header
-        background: #595957
-        nav
-            position: relative !important
-                            
-    .first__fold
-        height: auto !important
-        padding: 0 15px 0 15px
-        .row
-            .page__numberholder
-                display: none !important
-            .name__holder
-                width: 100% !important
-                padding: 7em 0 5em 0
-                .about__me
-                    padding-top: 0.5em !important
-                    font-size: 14px
-                .name
-                    font-size: 1.6em !important
-                    font-weight: 700
-            .pic__holder
-                width: 100% !important
-                text-align: end
-                display: none !important
-                >
-                    img
-                        width: 10em !important
-
-    .second__fold 
-        // height: auto !important
-        padding: 1em 0 1.5em 0
-        .row
-            flex-direction: column-reverse
-            .page__numberholder
-                display: none !important
-            .portfolio-slider-size
-                width: 100% !important
-            .name__holder
-                width: 100% !important
-                padding: 0 30px 0 30px
-                .name
-                    font-size: 1.6em !important
-                .about__me
-                    padding-bottom: 1.5em
-                    font-size: 14px !important
-
-    .third__fold 
-        // height: auto !important
-        padding: 1em 0 1.5em 0
-        .row 
-            .page__numberholder
-                display: none !important
-            .name__holder
-                width: 100% !important
-                .name
-                    font-size: 1.2em
-                .achievement__lists
-                    >
-                        li
-                            font-size: 14px !important
-                            >
-                                a
-                                    font-size: 14px !important
-
-    .fourth__fold 
-        .page__numberholder
-            display: none !important
-        .name__holder
-            width: 100%
-            .skills
-                font-size: 1.6em
-            .line
-                width: 65px
-        .logo__holder
-            >
-                li
-                    flex-basis: 30%
+    body
+        header
+            // background-color: #595957
+            nav
+                position: relative !important
+                                
+        .first__fold
+            height: auto !important
+            padding: 0 15px 0 15px
+            .row
+                .page__numberholder
+                    display: none !important
+                .name__holder
+                    width: 100% !important
+                    padding: 7em 0 5em 0
+                    .about__me
+                        padding-top: 0.5em !important
+                        font-size: 14px
+                    .name
+                        font-size: 1.6em !important
+                        font-weight: 700
+                .pic__holder
+                    width: 100% !important
+                    text-align: end
+                    display: none !important
                     >
                         img
-                            width: 2.5em
+                            width: 10em !important
 
-    .fifth__fold 
-        .row 
+        .second__fold 
+            // height: auto !important
+            padding: 1em 0 1.5em 0
+            .row
+                flex-direction: column-reverse
+                .page__numberholder
+                    display: none !important
+                .portfolio-slider-size
+                    width: 100% !important
+                .name__holder
+                    width: 100% !important
+                    padding: 0 30px 0 30px
+                    .name
+                        font-size: 1.6em !important
+                    .about__me
+                        padding-bottom: 1.5em
+                        font-size: 14px !important
+            .flex__box__container
+                width: 100% !important
+                flex-direction: column
+                .portfolio__images
+                    width: 100% !important
+                    height: 40vh
+                .sample__works
+                    width: 100% !important
+                    text-align: center
+
+        .third__fold 
+            // height: auto !important
+            padding: 1em 0 1.5em 0
+            .row 
+                .page__numberholder
+                    display: none !important
+                .name__holder
+                    width: 100% !important
+                    .name
+                        font-size: 1.2em
+                    .achievement__lists
+                        >
+                            li
+                                font-size: 14px !important
+                                >
+                                    a
+                                        font-size: 14px !important
+
+        #sample
+            .grid__container
+                grid-template-columns: repeat(3, auto)
+                .grid-item
+                    height: 80px
+
+        .fourth__fold 
             .page__numberholder
                 display: none !important
             .name__holder
                 width: 100%
+                .skills
+                    font-size: 1.6em
+                .line
+                    width: 65px
+            .logo__holder
+                >
+                    li
+                        flex-basis: 30%
+                        >
+                            img
+                                width: 2.5em
+
+        .fifth__fold 
+            .row 
+                .page__numberholder
+                    display: none !important
+                .name__holder
+                    width: 100%

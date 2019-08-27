@@ -51,8 +51,8 @@ body
                     .nav-item
                         .nav-link
                             color: $abo
-                        .nav-link:hover
-                            color: #397AC0
+                        // .nav-link:hover
+                        //     color: #397AC0
                             
             .navbar-toggler
                 border: unset !important
@@ -250,9 +250,12 @@ body
         display: flex
         align-items: center
         justify-content: center
+        overflow: hidden
         .page__numberholder
                 width: 12%
-                display: inline-block
+                display: flex
+                flex-direction: column
+                justify-content: center
                 .p__number
                     margin: 0
                     font-size: 45px
@@ -275,42 +278,82 @@ body
                     letter-spacing: 0.3em
                     transform: rotate(180deg)
                     color: $gray
-        .portfolio-slider-size
-            width: 50%
-            margin: auto 0
-            .single-item
-                .slick-slide
-                    outline: none
-                .slick-dots li.slick-active button:before
-                    font-size: 12px
+        .flex__box__container
+            display: flex
+            width: 88%
+            flex-direction: row-reverse
+            align-items: center
+            .sample__works
+                width: 40%
+                text-align: end
+                >p
                     color: $gray
-                .sample-works-holder
-                    >
-                        img
-                            height: auto
+                    text-transform: uppercase
+                    font-size: 30px
+                    font-weight: 700
+                .list__portfolio
+                    padding: 0
+                    margin: 0
+                    list-style-type: none
+                    color: $gray
+                    padding-bottom: 1em
+                    >li
+                        .portfolio__tab
+                            color: $gray
+                            text-decoration: none
+                            opacity: 0.5
+                        .portfolio__tab.active
+                            opacity: 1
+                            font-size: 25px
+                .view__all
+                    text-decoration: underline
+                    color: $gray
+                    text-transform: uppercase
+
+            .portfolio__images
+                width: 60%
+                display: block
+                position: relative
+                height: 80vh
+                .tab-image
+                    width: 100%
+                    >a
+                        height: 80vh
+                        width: 100%
+                        >img
                             width: 100%
-        .name__holder
-            width: 30%
-            margin: auto
-            .name
-                font-size: 2em
-                letter-spacing: 0.1em
+
+#sample
+    background-color: $abo
+    display: none
+    padding: 1em 0
+    overflow: hidden
+    .grid__container
+        display: grid
+        grid-template-columns: repeat(5, auto)
+        grid-gap: 10px
+        padding: 0 10px
+        .grid-item
+            height: 200px
+            width: 100%
+            overflow: hidden
+        .grid-item:hover
+            opacity: 0.8
+        .grid-item:first-child
+            border: unset !important
+            grid-column: 1 / -1
+            height: 100px
+            display: flex
+            justify-content: center
+            align-items: flex-end
+            >p
                 margin: 0
-                line-height: 1.1
                 color: $gray
-                padding-top: 1em
-            .line
-                content: ""
-                width: 80px
-                height: 5px
-                background: $gray
-                margin: 15px 0
-            .about__me
-                width: 100%
-                padding-top: 0.5em
-                display: inline-block
-                margin: 0
-                color: $gray
+                font-size: 25px
+                text-transform: uppercase
+                font-weight: 700
+                letter-spacing: 3px
+
 
 .third__fold
     background: $gray
@@ -494,13 +537,20 @@ body
 
 
 @media (max-width: 767px)
+    header
+        background: #595957
+        nav
+            position: relative !important
+                            
     .first__fold
+        height: auto !important
         padding: 0 15px 0 15px
         .row
             .page__numberholder
                 display: none !important
             .name__holder
                 width: 100% !important
+                padding: 7em 0 5em 0
                 .about__me
                     padding-top: 0.5em !important
                     font-size: 14px
@@ -510,12 +560,13 @@ body
             .pic__holder
                 width: 100% !important
                 text-align: end
+                display: none !important
                 >
                     img
                         width: 10em !important
 
     .second__fold 
-        height: auto !important
+        // height: auto !important
         padding: 1em 0 1.5em 0
         .row
             flex-direction: column-reverse
@@ -533,7 +584,7 @@ body
                     font-size: 14px !important
 
     .third__fold 
-        height: auto !important
+        // height: auto !important
         padding: 1em 0 1.5em 0
         .row 
             .page__numberholder

@@ -22,6 +22,11 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<!-- lightbox -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
 </head>
 
 <body>
@@ -81,9 +86,9 @@
 					Courteous and enthusiastic, I just started my career journey as a Front-End Developer and began to be fascinated by web programming, developing apps, and building websites. I gained experience of working in this area and looking for a company willing to offer me a placement among their developers. In return, I would offer my full commitment, and be a pleasant and friendly addition to your team.
 				</p>
 			</div>
-			<div class="pic__holder">
+			<!-- <div class="pic__holder">
 				<img src="img/mark-dp.png" alt="" class="img-fluid">
-			</div>
+			</div> -->
 		</div>
 	</div>
 </section>
@@ -99,31 +104,163 @@
 					my portfolio
 				</p>
 			</div>
-			<div class="portfolio-slider-size">
-				<div class="single-item">
-					<div class="sample-works-holder">
-						<img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-responsive">
+			<div class="flex__box__container">
+				<div class="sample__works">
+					<p>S A M P L E&nbsp;&nbsp;W O R K S</p>
+					<ul class="list__portfolio">
+						<li>
+							<a href="#tab-1" data-toggle="tab" class="portfolio__tab">
+								Globe Shop
+							</a>
+						</li>
+						<li>
+							<a href="#tab-2" data-toggle="tab" class="portfolio__tab active">
+								Globe Studios
+							</a>
+						</li>
+						<li>
+							<a href="#tab-3" data-toggle="tab" class="portfolio__tab">
+								Stylefest 2019
+							</a>
+						</li>
+						<li>
+							<a href="#tab-4" data-toggle="tab" class="portfolio__tab">
+								Pannzian Resort
+							</a>
+						</li>
+					</ul>
+					<a href="#sample" data-toggle="tab" class="view__all">
+						Landing Pages
+					</a>
+					
+				</div>
+				<div class="portfolio__images">
+					<div id="tab-1" class="tab-image">
+						<a data-fancybox="gallery" href="img/globe-shop.png">
+							<img src="img/globe-shop.png" alt="" class="img-fluid">
+						</a>
 					</div>
-					<div class="sample-works-holder">
-						<img src="https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-responsive">
+					<div id="tab-2" class="tab-image open">
+						<a data-fancybox="gallery" href="img/globe-studios.png"">
+							<img src="img/globe-studios.png" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div id="tab-3" class="tab-image">
+						<a data-fancybox="gallery" href="img/stylefest-2019.png">
+							<img src="img/stylefest-2019.png" alt="" class="img-fluid">
+						</a>
+					</div>
+					<div id="tab-4" class="tab-image">
+						<a data-fancybox="gallery" href="img/pannzian.png">
+							<img src="img/pannzian.png" alt="" class="img-fluid">
+						</a>
 					</div>
 				</div>
-			</div>
-			<div class="name__holder">
-				<p class="name">
-					Sample Works
-				</p>
-				<p class="line">
-					&nbsp;
-				</p>	
-				<p class="about__me">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas delectus tempore autem corporis rem, fugiat eaque id enim rerum, ut recusandae error itaque iusto laudantium ducimus sapiente, ratione dolores eum.
-				</p>
 			</div>
 		</div>
 	</div>
 </section>
+<div id="sample">
+	<div class="grid__container">
+		<div class="grid-item">
+			<p>
+				Sample Landing Pages
+			</p>
+		</div>
 
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="landing-pages/broadband-plans.png">
+				<img src="landing-pages/broadband-plans.png" alt="" class="img-fluid">
+			</a>
+		</div>
+
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="landing-pages/davinci.png">
+				<img src="landing-pages/davinci.png" alt="" class="img-fluid">
+			</a>
+		</div>
+
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="landing-pages/end-game.png">
+				<img src="landing-pages/end-game.png" alt="" class="img-fluid">
+			</a>
+		</div>
+
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="landing-pages/fox-plus.png">
+				<img src="landing-pages/fox-plus.png" alt="" class="img-fluid">
+			</a>
+		</div>
+
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="landing-pages/help.png">
+				<img src="landing-pages/help.png" alt="" class="img-fluid">
+			</a>
+		</div>
+
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="landing-pages/huawei-official-stores.png">
+				<img src="landing-pages/huawei-official-stores.png" alt="" class="img-fluid">
+			</a>
+		</div>
+
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="landing-pages/huawei-promos.png">
+				<img src="landing-pages/huawei-promos.png" alt="" class="img-fluid">
+			</a>
+		</div>
+
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="landing-pages/lifestyle.png">
+				<img src="landing-pages/lifestyle.png" alt="" class="img-fluid">
+			</a>
+		</div>
+		
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="landing-pages/official-stores.png">
+				<img src="landing-pages/official-stores.png" alt="" class="img-fluid">
+			</a>
+		</div>
+		
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="landing-pages/platinum-plans.png">
+				<img src="landing-pages/platinum-plans.png" alt="" class="img-fluid">
+			</a>
+		</div>
+
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="landing-pages/postpaid-phones.png">
+				<img src="landing-pages/postpaid-phones.png" alt="" class="img-fluid">
+			</a>
+		</div>
+
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="landing-pages/postpaid-plans.png">
+				<img src="landing-pages/postpaid-plans.png" alt="" class="img-fluid">
+			</a>
+		</div>
+
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="landing-pages/roku.png">
+				<img src="landing-pages/roku.png" alt="" class="img-fluid">
+			</a>
+		</div>
+		
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="landing-pages/switcher.png">
+				<img src="landing-pages/switcher.png" alt="" class="img-fluid">
+			</a>
+		</div>
+
+		
+		<div class="grid-item">
+			<a data-fancybox="gallery" href="landing-pages/xpc.png">
+				<img src="landing-pages/xpc.png" alt="" class="img-fluid">
+			</a>
+		</div>
+		
+	</div>
+</div>
 <section class="third__fold" id="thirdSection">
 	<div class="container">
 		<div class="row">

@@ -25,9 +25,28 @@
 			} else {
 				$('header').removeClass('classy-header');
 			}
-		};
-    });
+        };
+        
+        
+        $(".tab-image").fadeOut('slow');
+        $(".tab-image.open").fadeIn('slow');
+        $(".portfolio__tab").click(function() {
+            $(".tab-image").fadeOut('slow');
+            var openTab = $(this).attr("href");
+            $(openTab).fadeIn('slow');
     
+            $('.portfolio__tab').removeClass("active");
+            $(this).addClass("active");
+        });
+        
+        $(".view__all").click(function(){
+            $("#sample").toggle("fast");
+            var scrollTo = $(this).attr("href");
+            $('html, body').animate({ scrollTop: $(scrollTo).offset().top }, 'slow');
+            return false;
+        });
+    });
+            
     $('.single-item').slick({
         slidesToShow: 1,
         autoplaySpeed: 6500,

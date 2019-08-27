@@ -10,7 +10,7 @@ body {
       font-size: 25px;
       transition: 0.5s ease-out; }
     body .classy-header nav > a:hover {
-      color: #ECECEC; }
+      color: #ECECEC !important; }
     body .classy-header nav .collapse .navbar-nav .nav-item .nav-link {
       color: #ECECEC; }
     body .classy-header nav .navbar-toggler {
@@ -30,7 +30,7 @@ body {
         color: #595957;
         font-weight: 700; }
       body header nav > a:hover {
-        color: #595957; }
+        color: #595957 !important; }
       body header nav .collapse {
         justify-content: flex-end !important; }
         body header nav .collapse .navbar-nav .nav-item .nav-link {
@@ -279,7 +279,8 @@ body {
           body .second__fold .flex__box__container .sample__works .list__portfolio > li .portfolio__tab {
             color: #ECECEC;
             text-decoration: none;
-            opacity: 0.5; }
+            opacity: 0.5;
+            transition: 0.3s ease-in; }
           body .second__fold .flex__box__container .sample__works .list__portfolio > li .portfolio__tab.active {
             opacity: 1;
             font-size: 25px; }
@@ -298,7 +299,8 @@ body {
             height: 80vh;
             width: 100%; }
             body .second__fold .flex__box__container .portfolio__images .tab-image > a > img {
-              width: 100%; }
+              width: 100%;
+              transition: 0.3s ease-in; }
 
 #sample {
   background-color: #595957;

@@ -505,15 +505,15 @@ body {
         margin: 15px auto; }
       .fifth__fold .row .name__holder .email-add {
         color: #595957; }
-      .fifth__fold .row .name__holder .font__awesome {
-        padding-top: 1em; }
-        .fifth__fold .row .name__holder .font__awesome > a {
-          font-size: 30px;
-          color: #595957;
-          text-decoration: none;
-          transition: 0.5 ease; }
-          .fifth__fold .row .name__holder .font__awesome > a:hover {
-            color: blue; }
+    .fifth__fold .row .font__awesome {
+      padding-top: 1em; }
+      .fifth__fold .row .font__awesome > a {
+        font-size: 30px;
+        color: #595957;
+        text-decoration: none;
+        transition: 0.5 ease; }
+        .fifth__fold .row .font__awesome > a:hover {
+          color: blue; }
 
 @media (max-width: 767px) {
   body header nav {

@@ -1,0 +1,432 @@
+body {
+  font-family: "Roboto", sans-serif !important; }
+
+.mark-nav .b-a,
+.mark-nav .bar,
+.mark-nav .bar:before,
+.mark-nav .bar:after {
+  transition: all 0.25s;
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 6px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: #8E8D92; }
+.mark-nav .menu-collapsed {
+  transition: all 0.25s;
+  position: fixed;
+  top: 10px;
+  right: 9px;
+  height: 36px;
+  width: 36px;
+  z-index: 1;
+  cursor: pointer; }
+  .mark-nav .menu-collapsed ul {
+    transition: all 0s;
+    position: fixed;
+    left: -9000px; }
+  .mark-nav .menu-collapsed .bar {
+    position: fixed;
+    right: 20px;
+    top: 35px; }
+  .mark-nav .menu-collapsed .bar:before {
+    top: -8px; }
+  .mark-nav .menu-collapsed .bar:after {
+    top: 8px; }
+.mark-nav .b-a-expanded,
+.mark-nav .menu-expanded .bar:before,
+.mark-nav .menu-expanded .bar:after {
+  transition: all 0.25s;
+  top: 0px; }
+.mark-nav .menu-expanded {
+  transition: all 0.25s;
+  text-align: center;
+  line-height: 100px;
+  height: 100%;
+  width: 40%;
+  border-radius: 0px;
+  top: 0;
+  right: 0;
+  background-color: #19191299; }
+  .mark-nav .menu-expanded ul {
+    padding: 0;
+    transition: all 0s;
+    position: relative;
+    left: 0;
+    z-index: 2;
+    list-style-type: none; }
+  .mark-nav .menu-expanded a {
+    transition: all 0.15s;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 5px;
+    color: #fff;
+    display: block; }
+  .mark-nav .menu-expanded a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.15s;
+    letter-spacing: 2px;
+    color: #333;
+    border: 1px solid rgba(255, 255, 255, 0.15); }
+  .mark-nav .menu-expanded .bar {
+    background-color: transparent;
+    transition: all 0.25s;
+    z-index: 99999; }
+  .mark-nav .menu-expanded .bar:before {
+    transform: rotate(45deg); }
+  .mark-nav .menu-expanded .bar:after {
+    transform: rotate(-45deg); }
+
+.mark-fold1,
+.mark-fold2,
+.mark-fold3,
+.mark-fold4 {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding: 4em 0; }
+
+.mark-fold1 {
+  position: relative;
+  background-color: #ECECEC; }
+  .mark-fold1 .content-holder {
+    padding-left: 4em; }
+    .mark-fold1 .content-holder .flexbox-container {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap; }
+      .mark-fold1 .content-holder .flexbox-container .text-holder {
+        width: 50%; }
+        .mark-fold1 .content-holder .flexbox-container .text-holder .name {
+          font-weight: 700;
+          font-size: 2em;
+          color: #595957;
+          letter-spacing: 0.1em;
+          text-transform: uppercase; }
+          .mark-fold1 .content-holder .flexbox-container .text-holder .name:after {
+            content: "";
+            width: 80px;
+            height: 5px;
+            top: 0;
+            bottom: 0;
+            display: block;
+            background: #595957;
+            position: relative;
+            margin: 10px 0; }
+        .mark-fold1 .content-holder .flexbox-container .text-holder .short-desc {
+          color: #595957; }
+      .mark-fold1 .content-holder .flexbox-container .img-holder {
+        width: 45%; }
+
+.mark-fold2 {
+  background-color: #595957;
+  overflow: hidden; }
+  .mark-fold2 .content-holder {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly; }
+    .mark-fold2 .content-holder .item {
+      padding: 2em 0; }
+      .mark-fold2 .content-holder .item .sample-works {
+        color: #ECECEC;
+        font-size: 2em;
+        letter-spacing: 0.1em;
+        font-weight: 600; }
+      .mark-fold2 .content-holder .item .item-guide {
+        padding: 0;
+        margin: 0;
+        list-style-type: none; }
+        .mark-fold2 .content-holder .item .item-guide .list-item {
+          opacity: 0.3;
+          transition: 0.2s all ease-in-out; }
+          .mark-fold2 .content-holder .item .item-guide .list-item > p {
+            color: #ECECEC;
+            margin: 0;
+            cursor: pointer;
+            font-size: 18px; }
+        .mark-fold2 .content-holder .item .item-guide .list-item.selected {
+          opacity: 1; }
+    .mark-fold2 .content-holder .guide-image {
+      height: 70vh;
+      display: block;
+      position: relative;
+      width: 45%; }
+      .mark-fold2 .content-holder .guide-image .image-slider .tab-image {
+        width: 100%;
+        outline: none; }
+    .mark-fold2 .content-holder .view-more {
+      color: #ECECEC;
+      text-decoration: underline;
+      font-weight: 700;
+      margin-top: 1em;
+      display: block; }
+
+.content-holder {
+  width: 95%; }
+
+.page-num-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 5%;
+  margin: auto; }
+  .page-num-holder .page-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    flex-direction: column;
+    margin: 0;
+    color: #ECECEC; }
+    .page-num-holder .page-number > span {
+      width: 3px;
+      content: "";
+      height: 175px;
+      padding: 5px 0;
+      background: #ECECEC;
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 0px;
+      margin: 7px 0 10px 0;
+      display: inline-block; }
+  .page-num-holder .page-name {
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    z-index: 100;
+    letter-spacing: 0.3em;
+    transform: rotate(180deg);
+    color: #ECECEC; }
+  .page-num-holder .page-number-even {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    flex-direction: column;
+    margin: 0;
+    color: #595957; }
+    .page-num-holder .page-number-even > span {
+      width: 3px;
+      content: "";
+      height: 175px;
+      padding: 5px 0;
+      background: #595957;
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 0px;
+      margin: 7px 0 10px 0;
+      display: inline-block; }
+  .page-num-holder .page-name-even {
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    z-index: 100;
+    letter-spacing: 0.3em;
+    transform: rotate(180deg);
+    color: #595957; }
+
+#sample {
+  padding: 2em 0;
+  background-color: #595957; }
+  #sample .grid-container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    flex-wrap: wrap; }
+    #sample .grid-container .grid-item {
+      padding: 10px;
+      width: 25%; }
+      #sample .grid-container .grid-item .light-box-link {
+        display: block;
+        overflow: hidden;
+        height: 200px; }
+      #sample .grid-container .grid-item .website-link {
+        display: block;
+        text-align: center;
+        margin-top: 0.5em;
+        color: #ECECEC; }
+
+.mark-fold3 {
+  background-color: #ECECEC; }
+  .mark-fold3 .content-holder {
+    color: #595957;
+    padding-left: 4em;
+    margin: auto 0; }
+    .mark-fold3 .content-holder .title {
+      text-transform: uppercase;
+      color: #595957;
+      font-size: 1.5em;
+      letter-spacing: 0.1em;
+      line-height: 1.1;
+      font-weight: 700; }
+    .mark-fold3 .content-holder .year {
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      font-size: 1em; }
+    .mark-fold3 .content-holder .achievements .achievement-lists > a {
+      color: #595957;
+      text-decoration: underline; }
+    .mark-fold3 .content-holder .achievements .achievement-lists > p {
+      margin: 0; }
+
+.mark-fold4 {
+  background-color: #595957;
+  align-items: center; }
+  .mark-fold4 .content-holder .skills {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #ECECEC;
+    margin-bottom: 0; }
+  .mark-fold4 .content-holder .prog-tools {
+    text-align: center;
+    font-size: 1.5em;
+    color: #ECECEC;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column; }
+    .mark-fold4 .content-holder .prog-tools .line {
+      width: 50px;
+      content: "";
+      height: 1px;
+      padding: 2px 0;
+      background: #ECECEC;
+      position: relative;
+      left: 0;
+      right: 0;
+      text-align: center;
+      top: 0px;
+      margin: 10px auto; }
+  .mark-fold4 .content-holder .list-of-logos {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .mark-fold4 .content-holder .list-of-logos > li {
+      width: 17%;
+      padding: 10px;
+      text-align: center; }
+      .mark-fold4 .content-holder .list-of-logos > li > img:hover {
+        transition: 0.5s all ease;
+        transform: scale(1.03) !important; }
+
+.mark-fold5 {
+  background-color: #ECECEC;
+  height: 80vh;
+  align-items: center;
+  display: flex; }
+  .mark-fold5 .content-holder {
+    width: 100%;
+    text-align: center; }
+    .mark-fold5 .content-holder .get-in-touch {
+      color: #595957;
+      font-size: 3em;
+      font-weight: 700;
+      margin: 0; }
+    .mark-fold5 .content-holder .get-sub {
+      text-align: center;
+      color: #595957;
+      opacity: 0.7; }
+    .mark-fold5 .content-holder .send-email {
+      border: 1px solid #595957;
+      background-color: #595957;
+      display: inline-block;
+      color: #ECECEC;
+      padding: 0.6em 1em;
+      font-size: 1em;
+      text-decoration: none;
+      transition: 0.5s all ease;
+      border-radius: 20px; }
+    .mark-fold5 .content-holder .send-email:hover {
+      transform: scale(1.05) !important; }
+
+.footer {
+  background-color: #ECECEC; }
+  .footer .copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #595957;
+    padding: 0 1em;
+    display: block;
+    width: 100%; }
+
+@media (max-width: 767px) {
+  .mark-nav .menu-expanded {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    line-height: unset;
+    justify-content: center; }
+
+  .page-num-holder {
+    display: none; }
+
+  .content-holder {
+    width: 100%; }
+
+  .mark-fold1 .content-holder {
+    padding-left: 0; }
+    .mark-fold1 .content-holder .flexbox-container .text-holder {
+      width: 100%; }
+
+  .mark-fold2 .content-holder {
+    flex-direction: column; }
+    .mark-fold2 .content-holder .guide-image {
+      height: 55vh;
+      width: 100%; }
+    .mark-fold2 .content-holder .item .item-guide {
+      text-align: center; }
+    .mark-fold2 .content-holder .view-more {
+      text-align: center; }
+
+  #sample .grid-container .grid-item {
+    width: 50%; }
+
+  .mark-fold3 .content-holder {
+    padding-left: 0; }
+
+  .mark-fold4 .content-holder .list-of-logos > li {
+    width: 33%; } }
+@media (max-width: 568px) {
+  .mark-fold1, .mark-fold2, .mark-fold3, .mark-fold4 {
+    display: block;
+    padding: 2em 0;
+    height: auto; }
+
+  .mark-fold1 .content-holder {
+    padding: 0 1em; }
+    .mark-fold1 .content-holder .flexbox-container .text-holder .name {
+      font-size: 1.5em;
+      letter-spacing: 1px; }
+
+  .mark-fold2 .content-holder .item {
+    padding: 1em 0 2em 0; }
+
+  .mark-fold3 .content-holder {
+    padding: 0 1em; }
+    .mark-fold3 .content-holder .title {
+      font-size: 1.2em; }
+
+  .mark-fold4 .content-holder {
+    padding: 0 1em; }
+    .mark-fold4 .content-holder .list-of-logos > li {
+      padding: 2em; }
+
+  .mark-fold5 .content-holder {
+    padding: 0 1em; }
+    .mark-fold5 .content-holder .get-in-touch {
+      font-size: 2.5em; }
+    .mark-fold5 .content-holder .get-sub {
+      font-size: 15px; }
+    .mark-fold5 .content-holder .send-email {
+      font-size: 0.9em; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mark Aguado</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation.min.js">
+</head>
+
+<style>
+    .slider-nav-thumbnails .slick-slide {
+        opacity: 0.5;
+    }
+    
+    .slider-nav-thumbnails .slick-slide.slick-active {
+        opacity: 1;
+        background: green;
+    }
+    
+    .content {
+        font-size: 18px;
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+    
+    .one {
+        background: blue;
+    }
+    
+    .two {
+        background: red;
+    }
+    
+    .three {
+        background: purple;
+    }
+    
+    .four {
+        background: green;
+    }
+    
+    .five {
+        background: pink;
+    }
+    
+    .two,
+    .three,
+    .four,
+    .five {
+        display: none;
+    }
+</style>
+
+<body>
+
+    <div class="row">
+        <div class="large-12 columns">
+
+            <!-- MAIN SLIDES -->
+            <div class="slider">
+                <div data-index="1">
+                    <img src="http://placehold.it/1200x600&text=one" alt="One">
+                    <figcaption>Caption for image one.
+                    </figcaption>
+                </div>
+                <div data-index="2">
+                    <img src="http://placehold.it/1200x600&text=two" alt="One">
+                    <figcaption>Caption for image two.
+                    </figcaption>
+                </div>
+                <div data-index="3">
+                    <img src="http://placehold.it/1200x600&text=three" alt="One">
+                    <figcaption>Caption for image three.
+                    </figcaption>
+                </div>
+                <div data-index="4">
+                    <img src="http://placehold.it/1200x600&text=four" alt="One">
+                    <figcaption>Caption for image four.
+                    </figcaption>
+                </div>
+                <div data-index="5">
+                    <img src="http://placehold.it/1200x600&text=five" alt="One">
+                    <figcaption>Caption for image five.
+                    </figcaption>
+                </div>
+            </div>
+
+            <!-- THUMBNAILS -->
+            <div class="slider-nav-thumbnails">
+                <div><img src="http://placehold.it/1200x600&text=one" slide="slide_1">
+                </div>
+                <div><img src="http://placehold.it/1200x600&text=two" slide="slide_2">
+                </div>
+                <div><img src="http://placehold.it/1200x600&text=three" slide="slide_3">
+                </div>
+                <div><img src="http://placehold.it/1200x600&text=four" slide="slide_4">
+                </div>
+                <div><img src="http://placehold.it/1200x600&text=five" slide="slide_5">
+                </div>
+            </div>
+
+            <section class="content one" data-id="1">
+                Content for slide 1
+            </section>
+
+            <section class="content two" data-id="2">
+                Content for slide 2
+            </section>
+
+            <section class="content three" data-id="3">
+                Content for slide 3
+            </section>
+
+            <section class="content four" data-id="4">
+                Content for slide 4
+            </section>
+
+            <section class="content five" data-id="5">
+                Content for slide 5
+            </section>
+
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        $('.slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: false,
+            asNavFor: '.slider-nav-thumbnails',
+        });
+
+        $('.slider-nav-thumbnails').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '.slider',
+            // dots: true,
+            focusOnSelect: true
+        });
+
+        //remove active class from all thumbnail slides
+        $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
+
+        //set active class to first thumbnail slides
+        $('.slider-nav-thumbnails .slick-slide').eq(0).addClass('slick-active');
+
+        // On before slide change match active thumbnail to current slide
+        $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+            var mySlideNumber = nextSlide;
+            $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
+            $('.slider-nav-thumbnails .slick-slide').eq(mySlideNumber).addClass('slick-active');
+        });
+
+        //UPDATED 
+
+        $('.slider').on('afterChange', function(event, slick, currentSlide) {
+            $('.content').hide();
+            $('.content[data-id=' + (currentSlide + 1) + ']').show();
+        });
+    </script>
+
+
+
+</body>

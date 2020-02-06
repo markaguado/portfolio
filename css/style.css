@@ -251,6 +251,10 @@ body {
         margin-top: 0.5em;
         color: #ECECEC; }
 
+.active-sample {
+  display: block;
+  transition: 0.5s ease-out; }
+
 .mark-fold3 {
   background-color: #ECECEC; }
   .mark-fold3 .content-holder {
@@ -405,7 +409,8 @@ body {
     padding: 0 1em; }
     .mark-fold1 .content-holder .flexbox-container .text-holder .name {
       font-size: 1.5em;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      margin-top: 2em; }
 
   .mark-fold2 .content-holder .item {
     padding: 1em 0 2em 0; }

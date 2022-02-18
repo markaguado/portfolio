@@ -1,21 +1,82 @@
+// color palette
+$clrBlue: #5B6EFF
+$clrBlack: #000
+$clrWhite: #fff
+$clrGray: #F2F2F2
 
+// font sizes
+$fontLG: 2.125rem
+$fontMD: 1.5rem
+$fontSM: 1.125rem
 
+// font family
+$nunitoSans: 'Nunito Sans', sans-serif
+    
+// mixins
+@mixin displayFlex($displayFlex: displayFlexMix)
+    display: flex
+    align-items: center
+    list-style-type: none
+    margin: 0
+    padding: 0
+
+@mixin desktopContainer($desktopContainer: desktopContainerMix)
+    width: 90%
+    margin: 0 auto
+
+@mixin cstmClr($cstmClr: cstmClrMix)
+    color: $clrBlue
+    font-weight: 700
+
+@mixin cntnt($cntnt: cntntMix)
+    color: $clrBlack
+    font-family: $nunitoSans
+    font-size: $fontMD
 
 body
-    font-family: "Roboto", sans-serif !important
+    font-family: $nunitoSans
+    
+.custom-container
+    @include desktopContainer($desktopContainer: desktopContainerMix)
 
-// .mark-nav
-//     .navbar
-//         background-color: transparent
-//         width: 100%
-//         transition: all .5s ease-in-out
-//         padding-top: 1.563rem
-//         padding-bottom: 1.563rem
-//         .navbar-brand
-//             font-size: 1.6rem
-//             font-weight: 600
+.section-padding-base
+    padding: 3em 0
+
+.content-xl    
+    font-size: $fontLG !important
+.content-lg
+    @include cntnt($cntnt: cntntMix)
+.cstm-clr
+    @include cstmClr($cstmClr: cstmClrMix)
+.content-sm
+    @include cntnt($cntnt: cntntMix)
+    font-size: $fontSM
+
+
+.slick-prev
+    left: -45px !important
+.slick-prev:before, .slick-next:before
+    font-size: 40px !important
+    color: $clrBlue !important
+.slick-dots li button:before
+    font-size: 16px !important
+.slick-dots li.slick-active button:before
+    color: $clrBlue !important
+
 
 .mark-nav
+    font-family: $nunitoSans
+    @include displayFlex($displayFlex: displayFlexMix)
+    height: 120px
+    position: relative
+    .logo-mark
+        margin: 0
+        // padding-left: 45px
+        font-size: 24px
+        font-weight: 700
+        text-transform: uppercase
+        > a
+            color: $clrBlack
     .b-a, 
     .bar, 
     .bar:before, 
@@ -24,11 +85,11 @@ body
         content: ""
         position: absolute
         right: 0
-        height: 6px
-        width: 30px
-        border-radius: 15px
+        height: 5px
+        width: 50px
+        // border-radius: 15px
         // background-color: rgba(255, 255, 255, 0.95)
-        background-color: #8E8D92
+        background-color: $clrBlack
 
     .menu-collapsed 
         transition: all .25s
@@ -43,14 +104,29 @@ body
             transition: all 0s
             position: fixed
             left: -9000px
+        a 
+            transition: all .15s
+            text-decoration: none
+            font-size: 2em
+            padding: 5px
+            color: #fff !important
+            display: block
+        a:hover 
+            // background-color: rgba(255, 255, 255, 0.8)
+            background-color: $clrBlue
+            transition: all .15s
+            letter-spacing: 2px
+            color: #fff
+            border: 1px solid rgba(255, 255, 255, 0.15)
         .bar 
             position: fixed
-            right: 20px
-            top: 35px
+            display: block
+            right: 53px
+            top: 55px
         .bar:before 
-            top: -8px
+            top: -15px
         .bar:after 
-            top: 8px
+            top: 15px
 
 
     .b-a-expanded, 
@@ -82,13 +158,14 @@ body
             text-decoration: none
             font-size: 2em
             padding: 5px
-            color: #fff
+            color: #fff !important
             display: block
         a:hover 
-            background-color: rgba(255, 255, 255, 0.8)
+            // background-color: rgba(255, 255, 255, 0.8)
+            background-color: $clrBlue
             transition: all .15s
             letter-spacing: 2px
-            color: #333
+            color: #fff
             border: 1px solid rgba(255, 255, 255, 0.15)
 
         .bar 
@@ -102,417 +179,182 @@ body
         .bar:after 
             transform: rotate(-45deg)
 
-
-// .row 
-//   padding-top: 150px
-
-
-// h1 
-//   font-size: 3em
-
-
-// h3 
-//   color: #999
-
-
-// p 
-//   line-height: 160%
-//   letter-spacing: 1px
-
-
-.mark-fold1,
-.mark-fold2,
-.mark-fold3,
-.mark-fold4
-    display: flex
-    height: 100vh
-    align-items: center
-    padding: 4em 0
-
-.mark-fold1
+.mark-f1
+    height: 450px
     position: relative
-    background-color: #ECECEC
-    .content-holder
-        padding-left: 4em
-        .flexbox-container
-            align-items: center
-            display: flex
-            flex-wrap: wrap
-            .text-holder
-                width: 50%
-                .name
-                    font-weight: 700
-                    font-size: 2em
-                    color: #595957
-                    letter-spacing: .1em
-                    text-transform: uppercase
-                    &:after
-                        content: ""
-                        width: 80px
-                        height: 5px
-                        top: 0
-                        bottom: 0
-                        display: block
-                        background: #595957
-                        position: relative
-                        margin: 10px 0
-                .short-desc
-                    color: #595957
-
-            .img-holder
-                width: 45%
-
-
-
-.mark-fold2
-    background-color: #595957
-    overflow: hidden
-    .content-holder
-        // width: 95%
+    .button-holder
+        position: absolute
+        bottom: 30%
         display: flex
-        align-items: center
-        flex-direction: row-reverse
-        justify-content: space-evenly
-        .item
-            // width: 45%
-            padding: 2em 0
-            .sample-works
-                color: #ECECEC
-                font-size: 2em
-                letter-spacing: .1em
+        .button-item:first-child
+            margin-right: 30px
+        .button-item:last-child
+            .mark-button
+                background-color: $clrBlue
+                color: $clrWhite
+            .mark-button:hover
+                transition: .5s ease-out
+                background-color: $clrWhite
+                color: $clrBlack
+                text-decoration: none !important
+        .button-item
+            .mark-button
+                border: 1px solid $clrBlack
+                border-radius: 30px
+                font-size: $fontSM
+                padding: 15px 50px
+                display: block
+                text-transform: uppercase
+                width: 220px
+                text-align: center
+                color: $clrBlack
                 font-weight: 600
-            .item-guide
-                padding: 0
-                margin: 0
-                list-style-type: none
-                .list-item
-                    opacity: .3
-                    transition: .2s all ease-in-out
-                    >p
-                        color: #ECECEC    
-                        margin: 0   
-                        cursor: pointer    
-                        font-size: 18px
-                .list-item.selected
-                        opacity: 1
-                        // font-weight: 700
+            .mark-button:hover
+                transition: .5s ease-out
+                background-color: $clrBlue
+                color: $clrWhite
+                text-decoration: none !important
+  
+.mark-f2
+    background-color: $clrGray
+    padding-top: 4em 
+    .flex-container
+        flex-wrap: wrap
+        padding: 20px 0
+        list-style-type: none
+        margin: 0
+        .flex-items
+            // flex-basis: 33%
+            padding: 30px 10px
+            .img-holder
+                background-color: $clrWhite
+                height: 420px
+                position: relative
+                display: block
+                overflow: hidden
+            .link-holder
+                background-color: $clrBlue
+                height: 80px
+                padding: 20px
+                display: flex
+                justify-content: center
+                align-items: center
+                > a
+                    font-family: $nunitoSans
+                    font-size: $fontSM
+                    color: $clrWhite
+                    text-decoration: underline
 
-        .guide-image
-            height: 70vh
-            display: block
-            position: relative
-            width: 45%
-            .image-slider
-                .tab-image
-                    width: 100%
-                    outline: none
-        .view-more
-            color: #ECECEC
-            text-decoration: underline
-            font-weight: 700
-            margin-top: 1em
-            display: block
+.mark-f3
+    height: 420px
+    background-color: $clrWhite
+    .skills-slider
+        margin: 0
+        list-style-type: none
+        padding: 2em 0
+        .slick-prev,
+        .slick-prev:before, .slick-next:before
+            display: none
 
-// page css                                
-.content-holder
-    width: 95%
-
-.page-num-holder
+.mark-f4
+    height: 90vh
+    background-color: $clrGray
     display: flex
     flex-direction: column
     align-items: center
-    width: 5%
-    margin: auto
-    .page-number
+    justify-content: center
+    .cta-holder
         display: flex
         justify-content: center
-        align-items: center
-        font-size: 2rem
-        letter-spacing: 5px
-        flex-direction: column
-        margin: 0
-        color: #ECECEC
-        >span
-            width: 3px
-            content: ""
-            height: 175px
-            padding: 5px 0
-            background: #ECECEC
-            position: relative
-            left: 0
-            right: 0
-            top: 0px
-            margin: 7px 0 10px 0
-            display: inline-block
-    .page-name
-        text-transform: uppercase
-        writing-mode: vertical-rl
-        z-index: 100
-        letter-spacing: 0.3em
-        transform: rotate(180deg)
-        color: #ECECEC
-    // even
-    .page-number-even
-        display: flex
-        justify-content: center
-        align-items: center
-        font-size: 2rem
-        letter-spacing: 5px
-        flex-direction: column
-        margin: 0
-        color: #595957
-        >span
-            width: 3px
-            content: ""
-            height: 175px
-            padding: 5px 0
-            background: #595957
-            position: relative
-            left: 0
-            right: 0
-            top: 0px
-            margin: 7px 0 10px 0
-            display: inline-block
-    .page-name-even
-        text-transform: uppercase
-        writing-mode: vertical-rl
-        z-index: 100
-        letter-spacing: 0.3em
-        transform: rotate(180deg)
-        color: #595957
-
-#sample
-    padding: 2em 0
-    background-color: #595957
-    .grid-container
-        display: flex
-        padding: 0
-        margin: 0
-        list-style-type: none
-        flex-wrap: wrap
-        .grid-item
-            padding: 10px
-            width: 25%
-            .light-box-link
-                display: block
-                overflow: hidden
-                height: 200px
-            .website-link
-                display: block
-                text-align: center
-                margin-top: .5em
-                color: #ECECEC      
-                // text-decoration: underline
-.active-sample
-    display: block
-    transition: .5s ease-out
-        
-            
-
-.mark-fold3
-    background-color: #ECECEC
-    .content-holder
-        // width: 95%
-        color: #595957
-        padding-left: 4em
-        margin: auto 0
-        .title
+        padding-top: 2em
+        .cta-button
+            background-color: $clrBlue
+            color: $clrWhite
+            border: 1px solid $clrBlack
+            border-radius: 30px
+            font-size: $fontSM
+            padding: 15px 50px
+            display: block
             text-transform: uppercase
-            color: #595957
-            font-size: 1.5em
-            letter-spacing: .1em
-            line-height: 1.1
-            font-weight: 700
-        .year
-            margin-bottom: .5rem
-            font-weight: 700
-            font-size: 1em
-        .achievements
-            .achievement-lists
-                >a
-                    color: #595957
-                    text-decoration: underline
-                >p
-                    margin: 0
-
-.mark-fold4
-    background-color: #595957
-    align-items: center
-    .content-holder
-        // margin: auto
-        .skills
             text-align: center
-            font-weight: 700
-            font-size: 2em
-            text-transform: uppercase
-            color: #ECECEC
-            margin-bottom: 0
-        .prog-tools
-            text-align: center
-            // font-size: 1em
-            font-size: 1.5em
-            color: #ECECEC
-            text-transform: uppercase
-            display: flex
-            flex-direction: column
-            .line
-                width: 50px
-                content: ""
-                height: 1px
-                padding: 2px 0
-                background: #ECECEC
-                position: relative
-                left: 0
-                right: 0
-                text-align: center
-                top: 0px
-                margin: 10px auto
-        
-        .list-of-logos
-            padding: 0
-            margin: 0 
-            list-style-type: none
-            display: flex
-            flex-wrap: wrap
-            justify-content: center
-            > li
-                width: 17%
-                padding: 10px
-                text-align: center
-                >img:hover
-                    transition: .5s all ease
-                    transform: scale(1.03) !important
+            font-weight: 600
+        .cta-button:hover
+            transition: .5s ease-out
+            background-color: $clrWhite
+            color: $clrBlack
+            text-decoration: none !important
 
-.mark-fold5
-    background-color: #ECECEC
-    height: 80vh
-    align-items: center
+.page-maintenance
+    height: 75vh
     display: flex
-    .content-holder
-        width: 100%
-        text-align: center
-        .get-in-touch
-            color: #595957
-            font-size: 3em
-            font-weight: 700
-            margin: 0
-        .get-sub
-            text-align: center
-            color: #595957
-            opacity: .7
-        .send-email
-            border: 1px solid #595957
-            background-color: #595957
-            display: inline-block
-            color: #ECECEC
-            padding: .6em 1em
-            font-size: 1em
-            // margin: .5em 0
-            text-decoration: none
-            transition: .5s all ease
-            border-radius: 20px
-        .send-email:hover
-            // background-color: #ECECEC
-            // color: #595957
-            transform: scale(1.05) !important
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    > h1
+        color: $clrBlue
+        font-size: 3rem
 
+.loader
+    border: 16px solid #f3f3f3
+    border-radius: 50%
+    border-top: 16px solid $clrBlue
+    border-bottom: 16px solid $clrBlue
+    width: 90px
+    height: 90px
+    -webkit-animation: spin 2s linear infinite
+    animation: spin 2s linear infinite
+
+
+@-webkit-keyframes spin
+    0% 
+        -webkit-transform: rotate(0deg)
+    100% 
+        -webkit-transform: rotate(360deg)
+
+@keyframes spin
+    0% 
+        transform: rotate(0deg)
+    100% 
+        transform: rotate(360deg)
+
+
+    
 .footer
-    background-color: #ECECEC
+    // background-color: #5B6EFF
+    background-color: $clrGray
     .copyright
         text-align: center
-        font-size: 14px
-        color: #595957
-        padding: 0 1em
-        display: block
-        width: 100%
-@media (max-width: 767px)
+        margin: 0
+        padding: 2em 0
+        color: #000
+
+@media (max-width: 768px)
     .mark-nav .menu-expanded
         width: 100%
         display: flex
         align-items: center
         line-height: unset
         justify-content: center
-    .page-num-holder
-        display: none
-    .content-holder
-        width: 100%
 
-    .mark-fold1 
-        .content-holder
-            padding-left: 0
-            .flexbox-container 
-                .text-holder
-                    width: 100%
-
-    .mark-fold2 
-        .content-holder
-            flex-direction: column
-            .guide-image
-                height: 55vh
-                width: 100%
-            .item
-                .item-guide
-                    text-align: center
-            .view-more
-                text-align: center
-
-    #sample 
-        .grid-container 
-            .grid-item
-                width: 50%
-
-    .mark-fold3 
-        .content-holder
-            padding-left: 0
-
-    .mark-fold4 
-        .content-holder 
-            .list-of-logos 
-                > li
-                    width: 33%
+    .mark-f1
+        height: auto
+        .button-holder
+            position: relative !important
+            padding: 2em 0
 
 @media (max-width: 568px)
-    .mark-fold1, .mark-fold2, .mark-fold3, .mark-fold4
-        display: block
-        padding: 2em 0
-        height: auto
-    .mark-fold1 
-        .content-holder
-            padding: 0 1em
-            .flexbox-container
-                .text-holder
-                    .name
-                        font-size: 1.5em
-                        letter-spacing: 1px
-                        margin-top: 2em
-    .mark-fold2 
-        .content-holder
-            .item 
-                padding: 1em 0 2em 0 
-                // .sample-works
-                //     margin-top: 1em
-
-    .mark-fold3 
-        .content-holder
-            padding: 0 1em
-            .title
-                font-size: 1.2em
-
-    .mark-fold4 
-        .content-holder
-            padding: 0 1em
-            .list-of-logos
-                >li
-                    padding: 2em
-
-    .mark-fold5 
-        .content-holder 
-            padding: 0 1em
-            .get-in-touch
-                font-size: 2.5em
-            .get-sub
-                font-size: 15px
-            .send-email
-                font-size: .9em
-
-        
+    .mark-nav 
+        .menu-collapsed 
+            .bar
+                right: 25px
+    .mark-f1 
+        .button-holder
+            flex-wrap: wrap
+        .button-item:first-child
+            margin-right: 0
+            margin-bottom: 30px
+    .mark-f2 
+        .flex-container 
+            .flex-items 
+                .img-holder
+                    height: 350px

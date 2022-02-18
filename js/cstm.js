@@ -10,44 +10,87 @@ $(".menu-collapsed").click(function() {
 
 });
 
-$(document).ready(function() {
-
-    // $(".view-more").hide();
-    $(".view-more").on('click', function() {
-        $(this).text() === 'View Less' ? $(this).text('View More') : $(this).text('View Less');
-        $("#sample").toggle("1000");
-        var scrollTo = $(this).attr("href");
-        $('html, body').animate({ scrollTop: $(scrollTo).offset().top });
-        return false;
-        // var scrollTo = $(this).attr("href");
-        // $('html, body').velocity({ scrollTop: $(scrollTo).offset().top });
-        // return false;
-    });
-
-});
-
 
 $('.image-slider').slick({
     lazyLoad: 'ondemand',
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    dots: false,
-    infinite: true,
+    dots: true,
+    infinite: false,
     draggable: true,
     cssEase: 'ease-in-out',
     touchThreshold: 100,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrow: true,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: true,
+            },
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: false,
+            },
+        },
+    ],
 });
 
 
 
-$('.list-item').click(function(e) {
-    e.preventDefault();
-    var slideno = $(this).data('slide');
-    $('.image-slider').slick('slickGoTo', slideno - 1);
+$('.skills-slider').slick({
+    lazyLoad: 'ondemand',
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    dots: false,
+    infinite: true,
+    draggable: false,
+    cssEase: 'ease-in-out',
+    touchThreshold: 100,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    arrow: false,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                dots: false,
+                arrows: false,
+                infinite: true,
+            },
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                dots: false,
+                arrows: false,
+                infinite: true,
+            },
+        },
+        {
+            breakpoint: 425,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                dots: false,
+                arrows: false,
+                infinite: true,
+            },
+        },
+    ],
 });
 
-$('.image-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-    var mySlideNumber = nextSlide;
-    $('.list-item').removeClass('selected');
-    $('.list-item').eq(mySlideNumber).addClass('selected');
-});
+

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mark Aguado</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans" rel="stylesheet">
     <!-- custom style -->
     <link rel="stylesheet" href="css/style.css">
     <!-- bootstrap js/css -->
@@ -30,449 +30,235 @@
 <body>
 
     <section class="mark-nav">
-
-        <div class="menu-collapsed">
-            <div class="bar"></div>
-            <nav>
-                <ul>
-                    <li><a class="scroll" href="#intro">Introduction</a></li>
-                    <li><a class="scroll" href="#portfolio">Portfolio</a></li>
-                    <li><a class="scroll" href="#achievements">Achievements</a></li>
-                    <li><a class="scroll" href="#skills">Skills</a></li>
-                    <li><a class="scroll" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-
-    </section>
-
-    <section class="mark-fold1" id="intro">
-        <div class="container">
-            <div class="row">
-
-
-                <div class="page-num-holder">
-
-                    <p class="page-number-even">
-                        01
-                        <span>&nbsp;</span>
-                    </p>
-
-                    <p class="page-name-even">
-                        Introduction
-                    </p>
-
-                </div>
-
-                <div class="content-holder">
-
-                    <div class="flexbox-container">
-
-                        <div class="text-holder">
-                            <p class="name">
-                                I'M MARK!<br/> Front-end Developer
-                            </p>
-
-                            <p class="short-desc">
-                                Courteous and enthusiastic, I just started my career journey as a Front-End Developer and began to be fascinated by web programming, developing apps, and building websites. I gained experience of working in this area and looking for a company willing
-                                to offer me a placement among their developers. In return, I would offer my full commitment, and be a pleasant and friendly addition to your team.
-                            </p>
-                        </div>
-
-                        <div class="img-holder">
-
-                            <!-- <img src="img/mark-dp.png" alt="Mark Aguado" class="img-fluid"> -->
-
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-
-
+        <div class="custom-container">
+            <h1 class="logo-mark">
+                Mark Aguado
+            </h1>
+    
+            <div class="menu-collapsed">
+                <div class="bar"></div>
+                <nav>
+                    <ul>
+                        <li><a class="scroll" href="#intro">Introduction</a></li>
+                        <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+                        <li><a class="scroll" href="#skills">Skills</a></li>
+                        <li><a class="scroll" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </section>
 
-    <section class="mark-fold2" id="portfolio">
-        <div class="container">
-            <div class="row">
+    <section class="mark-f1 section-padding-base" id="intro">
+        <div class="custom-container">
+            <p class="content-lg content-xl">
+                Hi! <span class="cstm-clr">I'm Mark</span>
+            </p>
+            <p class="content-sm">
+                Courteous and enthusiastic, I just started my career journey as a Front-End Developer and began to be fascinated by web programming, developing apps, and building websites. I gained experience of working in this area and looking for a company willing to offer me a placement among their developers. In return, I would offer my full commitment, and be a pleasant and friendly addition to your team.
+            </p>
 
 
-                <div class="page-num-holder">
 
-                    <p class="page-number">
-                        02
-                        <span>&nbsp;</span>
-                    </p>
-
-                    <p class="page-name">
-                        My portfolio
-                    </p>
-
+            <div class="button-holder">
+                <div class="button-item">
+                    <a class="mark-button" href="https://www.linkedin.com/in/mark-aguado-807765167/">Linkedin</a>
                 </div>
+                <div class="button-item">
+                    <a class="mark-button scroll" href="#contact">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="content-holder">
+    <section class="section-padding-base mark-f2" id="portfolio">
+        <div class="custom-container">
+            <p class="content-lg cstm-clr">
+                My Portfolio
+            </p>
+            <p class="content-sm">
+                Being a developer, I have developed/maintain these wonderful projects that helped their business reached their clients seamlessly. I have also developed lots of landing pages with different kinds of layout and they are responsive from desktop to mobile, you may see it <a href="landing-pages.html" class="cstm-clr">here</a>. 
+            </p>
 
-
-
-
-                    <div class="item">
-                        <p class="sample-works">
-                            Sample Works
-                        </p>
-                        <ul class="item-guide">
-
-                            <li class="list-item selected" data-slide="1">
-                                <p>Globe Online Shop</p>
-                            </li>
-                            <li class="list-item" data-slide="2">
-                                <p>Globe Studios</p>
-                            </li>
-                            <li class="list-item" data-slide="3">
-                                <p>Stylefest 2019</p>
-                            </li>
-                            <li class="list-item" data-slide="4">
-                                <p>Pannzian Resort</p>
-                            </li>
-
-                        </ul>
-
-                        <a href="#sample" data-toggle="tab" class="view-more">
-                            View More
+            <ul class="flex-container image-slider">
+                <li class="flex-items">
+                    <div class="img-holder">
+                        <a data-fancybox="gallery" class="light-box-link" href="icons/shop-globe-lg.svg">
+                            <img src="icons/shop-globe-lg.svg" alt="Globe Online Shop" class="img-fluid">
                         </a>
                     </div>
-
-
-
-                    <div class="guide-image">
-
-                        <div class="image-slider">
-                            <div class="tab-image">
-                                <img src="img/globe-shop.jpg" alt="Globe Shop" class="img-fluid">
-                            </div>
-
-                            <div class="tab-image">
-                                <img src="img/globe-studios.jpg" alt="Globe Studios" class="img-fluid">
-                            </div>
-
-                            <div class="tab-image">
-                                <img src="img/stylefest-2019.jpg" alt="Stylefest" class="img-fluid">
-                            </div>
-
-                            <div class="tab-image">
-                                <img src="img/pannzian.jpg" alt="Pannzian Resort" class="img-fluid">
-                            </div>
-
-                        </div>
-
+                    <div class="link-holder">
+                        <a href="https://shop.globe.com.ph">
+                            Globe Online Shop
+                        </a>
                     </div>
-
-
-
-                </div>
-
-
-            </div>
+                </li>
+                <li class="flex-items">
+                    <div class="img-holder">
+                        <a data-fancybox="gallery" class="light-box-link" href="icons/globe-studios-lg.svg">
+                            <img src="icons/globe-studios-lg.svg" alt="Globe Studios" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="link-holder">
+                        <a href="https://anima.ph">
+                            Globe Studios
+                        </a>
+                    </div>
+                </li>
+                <li class="flex-items">
+                    <div class="img-holder">
+                        <a data-fancybox="gallery" class="light-box-link" href="icons/new-online-lg.svg">
+                            <img src="icons/new-online-lg.svg" alt="Globe New Online Shop" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="link-holder">
+                        <a href="https://new.globe.com.ph">
+                            Globe New Online Shop
+                        </a>
+                    </div>
+                </li>
+                <li class="flex-items">
+                    <div class="img-holder">
+                        <a data-fancybox="gallery" class="light-box-link" href="icons/pannzian-lg.svg">
+                            <img src="icons/pannzian-lg.svg" alt="Pannzian" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="link-holder">
+                        <a href="http://pannzian.com">
+                            Pannzian
+                        </a>
+                    </div>
+                </li>
+                <li class="flex-items">
+                    <div class="img-holder">
+                        <a data-fancybox="gallery" class="light-box-link" href="icons/stonecast-lg.svg">
+                            <img src="icons/stonecast-lg.svg" alt="Stonecast Development" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="link-holder">
+                        <a href="https://stonecastdev.com">
+                            Stonecast Development
+                        </a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
 
-    <!-- sample page -->
-    <div id="sample" style="display: none;">
-        <ul class="grid-container">
+    <section class="section-padding-base mark-f3" id="skills">
+        <div class="custom-container">
+            <p class="content-lg cstm-clr">
+                Technologies and Tools
+            </p>
+            <p class="content-sm">
+                These are the tools and technologies that I have been using when developing a project.
+            </p>
+            <ul class="skills-slider">
+                <li class="skills-items">
+                    <div class="img-holder">
+                        <img src="icons/angular.svg" alt="Angular" class="img-fluid">
+                    </div>
+                </li>
+                <li class="skills-items">
+                    <div class="img-holder">
+                        <img src="icons/bitbucket.svg" alt="BitBucket" class="img-fluid">
+                    </div>
+                </li>
+                <li class="skills-items">
+                    <div class="img-holder">
+                        <img src="icons/css.svg" alt="CSS" class="img-fluid">
+                    </div>
+                </li>
+                <li class="skills-items">
+                    <div class="img-holder">
+                        <img src="icons/drupal.svg" alt="Drupal" class="img-fluid">
+                    </div>
+                </li>
+                <li class="skills-items">
+                    <div class="img-holder">
+                        <img src="icons/figma.svg" alt="Figma" class="img-fluid">
+                    </div>
+                </li>
+                <li class="skills-items">
+                    <div class="img-holder">
+                        <img src="icons/git.svg" alt="Git" class="img-fluid">
+                    </div>
+                </li>
+                <li class="skills-items">
+                    <div class="img-holder">
+                        <img src="icons/html.svg" alt="HTML" class="img-fluid">
+                    </div>
+                </li>
+                <li class="skills-items">
+                    <div class="img-holder">
+                        <img src="icons/javascript.svg" alt="Javascript" class="img-fluid">
+                    </div>
+                </li>
+                <li class="skills-items">
+                    <div class="img-holder">
+                        <img src="icons/jira.svg" alt="Jira" class="img-fluid">
+                    </div>
+                </li>
+                <li class="skills-items">
+                    <div class="img-holder">
+                        <img src="icons/opencart.svg" alt="Opencart" class="img-fluid">
+                    </div>
+                </li>
+                <li class="skills-items">
+                    <div class="img-holder">
+                        <img src="icons/php.svg" alt="PHP" class="img-fluid">
+                    </div>
+                </li>
+                <li class="skills-items">
+                    <div class="img-holder">
+                        <img src="icons/react.svg" alt="React JS" class="img-fluid">
+                    </div>
+                </li>
+                <li class="skills-items">
+                    <div class="img-holder">
+                        <img src="icons/sass.svg" alt="Sass" class="img-fluid">
+                    </div>
+                </li>
+                <li class="skills-items">
+                    <div class="img-holder">
+                        <img src="icons/trello.svg" alt="Trello" class="img-fluid">
+                    </div>
+                </li>
+                <li class="skills-items">
+                    <div class="img-holder">
+                        <img src="icons/wordpress.svg" alt="Wordpress" class="img-fluid">
+                    </div>
+                </li>
 
-
-            <li class="grid-item">
-                <a data-fancybox="gallery" class="light-box-link" href="img/landing-pages/ayala.jpg">
-                    <img src="img/landing-pages/ayala.jpg" alt="" class="img-fluid">
-                </a>
-                <a href="https://shop.globe.com.ph/ayala-group-exclusive-offers" class="website-link">
-                    Visit: Ayala Exclusive
-                </a>
-            </li>
-
-            <li class="grid-item">
-                <a data-fancybox="gallery" class="light-box-link" href="img/landing-pages/booky.jpg">
-                    <img src="img/landing-pages/booky.jpg" alt="" class="img-fluid">
-                </a>
-                <a href="https://shop.globe.com.ph/entertainment-subscriptions/booky" class="website-link">
-                    Visit: Globe Booky
-                </a>
-            </li>
-
-            <li class="grid-item">
-                <a data-fancybox="gallery" class="light-box-link" href="img/landing-pages/broadband-plans.jpg">
-                    <img src="img/landing-pages/broadband-plans.jpg" alt="" class="img-fluid">
-                </a>
-                <a href="https://shop.globe.com.ph/broadband-plans" class="website-link">
-                    Visit: Broadband Plans
-                </a>
-            </li>
-
-            <li class="grid-item">
-                <a data-fancybox="gallery" class="light-box-link" href="img/landing-pages/disney.jpg">
-                    <img src="img/landing-pages/disney.jpg" alt="" class="img-fluid">
-                </a>
-                <a href="https://shop.globe.com.ph/entertainment-subscriptions/disneylife" class="website-link">
-                    Visit: Globe DisneyLife
-                </a>
-            </li>
-
-            <li class="grid-item">
-                <a data-fancybox="gallery" class="light-box-link" href="img/landing-pages/fox-plus.jpg">
-                    <img src="img/landing-pages/fox-plus.jpg" alt="" class="img-fluid">
-                </a>
-                <a href="https://shop.globe.com.ph/entertainment-subscriptions/fox-plus" class="website-link">
-                    Visit: Globe Fox Plus
-                </a>
-            </li>
-
-            <li class="grid-item">
-                <a data-fancybox="gallery" class="light-box-link" href="img/landing-pages/hooq.jpg">
-                    <img src="img/landing-pages/hooq.jpg" alt="" class="img-fluid">
-                </a>
-                <a href="https://shop.globe.com.ph/entertainment-subscriptions/hooq" class="website-link">
-                    Visit: Globe Hooq
-                </a>
-            </li>
-
-            <li class="grid-item">
-                <a data-fancybox="gallery" class="light-box-link" href="img/landing-pages/huawei.jpg">
-                    <img src="img/landing-pages/huawei.jpg" alt="" class="img-fluid">
-                </a>
-                <a href="https://shop.globe.com.ph/huawei-offical-store" class="website-link">
-                    Visit: Globe Huawei
-                </a>
-            </li>
-
-            <li class="grid-item">
-                <a data-fancybox="gallery" class="light-box-link" href="img/landing-pages/plan-renewal.jpg">
-                    <img src="img/landing-pages/plan-renewal.jpg" alt="" class="img-fluid">
-                </a>
-                <a href="https://www.globe.com.ph/shop/plan-renewal.html" class="website-link">
-                    Visit: Globe Plan Renewal
-                </a>
-            </li>
-
-            <li class="grid-item">
-                <a data-fancybox="gallery" class="light-box-link" href="img/landing-pages/postpaid-plans.jpg">
-                    <img src="img/landing-pages/postpaid-plans.jpg" alt="" class="img-fluid">
-                </a>
-                <a href="https://www.globe.com.ph/shop/postpaid-plans.html" class="website-link">
-                    Visit: Globe Postpaid plans
-                </a>
-            </li>
-
-            <li class="grid-item">
-                <a data-fancybox="gallery" class="light-box-link" href="img/landing-pages/prepaid-wifi.jpg">
-                    <img src="img/landing-pages/prepaid-wifi.jpg" alt="" class="img-fluid">
-                </a>
-                <a href="https://shop.globe.com.ph/prepaid-globe-at-home-wifi" class="website-link">
-                    Visit: Globe Prepaid WiFi
-                </a>
-            </li>
-
-            <li class="grid-item">
-                <a data-fancybox="gallery" class="light-box-link" href="img/landing-pages/viu.jpg">
-                    <img src="img/landing-pages/viu.jpg" alt="" class="img-fluid">
-                </a>
-                <a href="https://shop.globe.com.ph/entertainment-subscriptions/viu" class="website-link">
-                    Visit: Globe VIU
-                </a>
-            </li>
-
-            <li class="grid-item">
-                <a data-fancybox="gallery" class="light-box-link" href="img/landing-pages/youtube.jpg">
-                    <img src="img/landing-pages/youtube.jpg" alt="" class="img-fluid">
-                </a>
-                <a href="https://shop.globe.com.ph/entertainment-subscriptions/youtube" class="website-link">
-                    Visit: Globe Youtube
-                </a>
-            </li>
-        </ul>
-    </div>
-
-    <section class="mark-fold3" id="achievements">
-        <div class="container">
-            <div class="row">
-
-                <div class="page-num-holder">
-
-                    <p class="page-number-even">
-                        03
-                        <span>&nbsp;</span>
-                    </p>
-
-                    <p class="page-name-even">
-                        My achievements
-                    </p>
-
-                </div>
-
-                <div class="content-holder">
-
-                    <p class="title">
-                        List of achievements / <br/>trainings
-                    </p>
-
-                    <p class="year">2019</p>
-                    <ul class="achievements">
-
-
-                        <li class="achievement-lists">
-                            <a href="https://globestudios.ph">Globe Studios</a>
-                        </li>
-
-                        <li class="achievement-lists">
-                            <a href="https://shop.globe.com.ph">Globe Shop</a>
-                        </li>
-
-                        <li class="achievement-lists">
-                            <a href="https://stylefest.ph">Stylefest 2019</a>
-                        </li>
-
-                        <li class="achievement-lists">
-                            <a href="http://www.pannzian.com">Pannzian Resort</a>
-                        </li>
-
-
-                    </ul>
-
-                    <p class="year">2018</p>
-                    <ul class="achievements">
-
-
-                        <li class="achievement-lists">
-                            <p>Cisco CCNA Certificate</p>
-                        </li>
-
-                        <li class="achievement-lists">
-                            <p>Information Technology Education and IT Skills Competition</p>
-                        </li>
-
-                        <li class="achievement-lists">
-                            <p>Information Technology Education and IT Skills Competition</p>
-                        </li>
-
-                        <li class="achievement-lists">
-                            <p>Data Science and Visual Analytics</p>
-                        </li>
-
-                        <li class="achievement-lists">
-                            <p>Photoshop Techniques and Ethics in Photo Manipulation</p>
-                        </li>
-
-                        <li class="achievement-lists">
-                            <p>Photoshop Techniques and Ethics in Photo Manipulation</p>
-                        </li>
-
-
-                    </ul>
-
-
-                </div>
-
-            </div>
+            </ul>
         </div>
     </section>
 
-    <section class="mark-fold4" id="skills">
-        <div class="container">
-            <div class="row">
-
-                <div class="page-num-holder">
-
-                    <p class="page-number">
-                        04
-                        <span>&nbsp;</span>
-                    </p>
-
-                    <p class="page-name">
-                        My skills
-                    </p>
-
-                </div>
-
-                <div class="content-holder">
-
-
-
-                    <p class="prog-tools">
-                        programming languages <br/>& tools
-                        <!-- <span class="line">&nbsp;</span> -->
-                    </p>
-
-                    <ul class="list-of-logos">
-                        <li>
-                            <img src="img/Html5.png" alt="" class="img-fluid" title="HTML5">
-                        </li>
-                        <li>
-                            <img src="img/CSS3.png" alt="" class="img-fluid" title="CSS3">
-                        </li>
-                        <li>
-                            <img src="img/js.png" alt="" class="img-fluid" title="Javascript">
-                        </li>
-                        <li>
-                            <img src="img/wordpress.png" alt="" class="img-fluid" title="Wordpress">
-                        </li>
-                        <li>
-                            <img src="img/opencart.png" alt="" class="img-fluid" title="OpenCart">
-                        </li>
-                        <li>
-                            <img src="img/sass.png" alt="" class="img-fluid" title="SASS">
-                        </li>
-                        <li>
-                            <img src="img/figma.png" alt="" class="img-fluid" title="Figma">
-                        </li>
-                        <li>
-                            <img src="img/bootstrap.png" alt="" class="img-fluid" title="Bootstrap">
-                        </li>
-                        <li>
-                            <img src="img/PHP.png" alt="" class="img-fluid" title="PHP">
-                        </li>
-                        <li>
-                            <img src="img/git.png" alt="" class="img-fluid" title="GitHub">
-                        </li>
-                    </ul>
-
-                </div>
-
+    <section class="section-padding-base mark-f4" id="contact">
+        <div class="custom-container">
+            <!-- <p class="content-lg content-xl">
+                Get in touch.
+            </p> -->
+            <p class="content-xl cstm-clr text-center">
+                Get in touch.
+            </p>
+            <p class="content-sm text-center">
+                Looking for a company willing to offer me a placement among their developers or work as Freelance.
+            </p>
+            <div class="cta-holder">
+                <a href="mailto:markaguado.dev@gmail.com" class="cta-button">Send me an email</a>
             </div>
         </div>
     </section>
-
-    <section class="mark-fold5" id="contact">
-        <div class="container">
-            <div class="row">
-
-                <div class="content-holder">
+    
 
 
-                    <p class="get-in-touch">
-                        Get in touch.
-                    </p>
-                    <p class="get-sub">
-                        Looking for a company willing to offer me a placement among their developers.
-                    </p>
-
-                    <a class="send-email" href="mailto:markaguado1798@gmail.com">Send me an email</a>
-
-
-                </div>
-
-            </div>
-        </div>
-    </section>
 
     <section class="footer">
-        <div class="container">
-            <div class="row">
-                <p class="copyright">
-                    Copyright 2020 Mark Aguado. Powered by GitHub.
-                </p>
-            </div>
+        <div class="custom-container">
+            <p class="copyright">
+                Copyright 2022 Mark Aguado. Powered by GitHub.
+            </p>
         </div>
     </section>
 

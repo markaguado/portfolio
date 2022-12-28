@@ -1,0 +1,115 @@
+/* ---------------------
+Mark Anthony Jr Aguado
+Assignment 1
+Style for Courses Page
+------------------------*/
+
+.courseHeadingSection {
+    padding: 3em 0;
+    background-color: #C6C8C9;
+}
+
+.searchContainer {
+    display: flex;
+    padding: 15px 0 25px;
+}
+
+.searchContainer .searchItems>select {
+    height: 36px;
+}
+
+.radioContainer {
+    display: flex;
+}
+
+.radioContainer .radioItems:first-child {
+    padding-right: 20px;
+}
+
+select {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid#202833;
+}
+
+input {
+    padding: 5px;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #202833;
+    border-bottom: 1px solid #202833;
+    height: 36px;
+}
+
+button {
+    height: 36px;
+    padding: 0 15px;
+    background-color: #202833;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #202833;
+}
+
+.radioItems {
+    display: flex;
+    align-items: center;
+}
+
+.radioItems>input {
+    margin-right: 10px;
+}
+
+.courseFold {
+    padding: 3em 0;
+}
+
+.courseFlex {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.courseFlexItems {
+    flex-basis: 100%;
+    padding: 10px;
+    display: flex;
+}
+
+.courseFlexItems>.imgDefault {
+    width: 30%;
+    height: 100%;
+}
+
+.courseFold>.container>.subHeading {
+    text-align: center;
+    padding: 10px;
+}
+
+.courseFlexItems>img {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.courseTitle {
+    font-weight: bold;
+}
+
+
+
+.courseBg {
+    /* border: 1px solid #202833; */
+    background-color: #C6C8C9;
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.courseBg .desc {
+    font-size: 16px;
+    margin-bottom: 0;
+}

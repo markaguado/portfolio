@@ -1,0 +1,332 @@
+/* ---------------------
+Mark Anthony Jr Aguado
+Assignment 1
+Media Queries
+------------------------*/
+
+
+/* margin */
+
+header>.mainNav,
+.container {
+    margin: 0 auto;
+}
+
+/*---------------------
+     large screen size
+ ---------------------*/
+/* css settings for 1700px and up screen */
+@media only screen and (min-width: 1700px) {
+
+    header>.mainNav,
+    .container {
+        max-width: 1320px;
+    }
+
+    .firstFold {
+        background-position-x: 1500px !important;
+    }
+
+    main>.container>.flexContainer {
+        height: 90vh !important;
+    }
+}
+
+
+@media only screen and (max-width: 1699px) {
+
+
+    header>.mainNav,
+    .container {
+        max-width: 90%;
+    }
+
+    .firstFold {
+        background-position-x: right !important;
+    }
+
+}
+
+
+/*----------------
+    tablet size 
+-----------------*/
+
+@media screen and (max-width: 1024px) {
+
+    /*--------- index ------------*/
+    main>.container>.flexContainer {
+        height: 100vh !important;
+    }
+
+    .indexFlex>.flexItems>.description {
+        background-color: #ffffffb5;
+        padding: 10px 0;
+        border-radius: 4px;
+    }
+
+    .indexFlex {
+        align-items: flex-end !important;
+    }
+
+    .indexFlex>.flexItems {
+        flex-basis: 100% !important;
+        margin: 0 auto;
+    }
+
+    .personalPhoto {
+        margin-right: 0 !important;
+        opacity: 0.6;
+    }
+
+    main>.container>.indexFlex>.flexItems:last-child {
+        z-index: -1;
+    }
+
+    .linksContainer {
+        padding-bottom: 30px;
+    }
+
+    /*-------- resume ---------------*/
+    .firstFold {
+        height: 250px !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .firstFold .flexItemsCustom:first-child {
+        background-color: #ffffffb5;
+        padding: 20px;
+        border-radius: 4px;
+    }
+
+    .skillsFlex {
+        flex-wrap: wrap;
+    }
+
+    .firstFold .flexItemsCustom:first-child {
+        flex-basis: 100% !important;
+    }
+
+    .secondFold .skillsFlex .flexItemsCustom {
+        flex-basis: 45% !important;
+    }
+
+
+    .thirdFold .skillsFlex .flexItemsCustom {
+        flex-basis: 100% !important;
+    }
+
+    .cstmImg {
+        padding-bottom: 25px;
+        margin-left: 0 !important;
+        width: 300px !important;
+    }
+
+    .fourthFold .skillsFlex {
+        flex-direction: column-reverse;
+        align-items: unset;
+    }
+
+    .fifthFold .thumbnailContainer .thumbnailItems {
+        flex-basis: 100% !important;
+    }
+
+    /*------- courses -------*/
+    .courseFlexItems {
+        flex-wrap: wrap;
+        flex-basis: 100% !important;
+    }
+
+    .courseFlexItems>.imgDefault {
+        flex-basis: 100%;
+        width: 100% !important;
+        height: auto !important;
+        margin: 0;
+    }
+
+    .courseFlexItems>img {
+        border-top-right-radius: 10px !important;
+        border-bottom-left-radius: 0px !important;
+        border-top-left-radius: 10px !important;
+    }
+
+    .courseBg {
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0px !important;
+        border-bottom-left-radius: 10px;
+
+    }
+
+    .searchItems>input,
+    button,
+    select {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 991px) {
+    .footerFlexItems {
+        flex-basis: 50%;
+        flex-wrap: wrap;
+    }
+
+    .footerFlexItems .flexInnerChild:first-child {
+        padding-right: 0 !important;
+        padding-bottom: 20px;
+    }
+
+    .footerFlexItems .flexInnerChild>a>img {
+        width: 25px !important;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .desktopMenu {
+        display: none !important;
+    }
+
+    .mobileMenu {
+        display: block !important;
+    }
+
+    header>.mainNav>div>.navLinksContainer {
+        right: -30px !important;
+    }
+
+}
+
+/*--------------------
+ mobile phone size 
+---------------------*/
+@media screen and (max-width: 576px) {
+    header>.mainNav>div>.navLinksContainer {
+        right: -19px !important;
+    }
+
+    /*---------- footer -----------*/
+    .footerFlexItems {
+        flex-basis: 100% !important;
+    }
+
+    .footerLogo {
+        margin: 0 auto !important;
+    }
+
+    .footerFlexItems {
+        padding: 10px 0;
+        justify-content: center;
+    }
+
+    /*--------- default -----------*/
+    h1 {
+        font-size: 30px !important;
+    }
+
+    .subHeading {
+        font-size: 20px !important;
+    }
+
+
+    /*---------- header ------------*/
+    header>.mainNav>.navLinksContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header>.mainNav>.navLinksContainer>li>.navLinks:first-child {
+        padding-right: 15px !important;
+    }
+
+    header>.mainNav>.navLinksContainer>li {
+        flex-basis: 45%;
+    }
+
+
+    /*------- index ------------*/
+    main>.container>.indexFlex>.flexItems:first-child {
+        padding-top: 30px;
+    }
+
+    .linksContainer .collegeLink {
+        flex-basis: 200px !important;
+    }
+
+    .indexFlex {
+        align-items: flex-start !important;
+    }
+
+    .linksContainer .collegeLink:first-child {
+        margin-bottom: 10px;
+    }
+
+    /*---------- resume -----------*/
+    .secondFold .skillsFlex .flexItemsCustom {
+        flex-basis: 100% !important;
+        padding: 20px 0;
+    }
+
+    .secondFold .skillsFlex .flexItemsCustom:nth-child(2) {
+        border-top: 1px solid #202833;
+        border-bottom: 1px solid #202833;
+    }
+
+    .projectLink {
+        font-size: 18px !important;
+    }
+
+
+}
+
+@media only screen and (max-width: 440px) {
+
+    /*-------- default margin 
+         440px and below
+    --------*/
+    main>.container>.flexContainer {
+        height: auto !important;
+    }
+
+    header>.mainNav,
+    .container {
+        max-width: 90%;
+    }
+
+    .firstFold {
+        height: 350px !important;
+    }
+
+    /*----------- courses --------------*/
+    .searchContainer {
+        flex-wrap: wrap-reverse;
+    }
+
+    .searchContainer .searchItems>select {
+        border-radius: 10px;
+
+    }
+
+    .searchItems>input {
+        border: 1px solid #202833 !important;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+    }
+
+    .searchContainer .searchItems:first-child {
+        flex-basis: 286px;
+    }
+
+    .searchContainer .searchItems:nth-child(2) {
+        flex-basis: 200px;
+    }
+
+    .searchContainer .searchItems:nth-child(2),
+    .searchContainer .searchItems:nth-child(3) {
+        margin-bottom: 10px;
+    }
+}

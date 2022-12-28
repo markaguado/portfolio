@@ -1,0 +1,290 @@
+/* ------------------------------------
+CSS - Main FILE
+Name: Mark Anthony Jr Aguado                     
+Date: October 23, 2022                          
+Section: CST 8285 section 302                    
+Description: Assignment 1                        
+-------------------------------------*/
+
+/* importing css and font */
+/* Using a url */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* media queries */
+@import url("../css/responsive.css");
+@import url("../css/resume.css");
+@import url("../css/courses.css");
+
+
+/* default classes */
+*,
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #202833;
+    font-size: 1rem;
+}
+
+header {
+    background-color: #202833;
+}
+
+.imgDefault {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+h1,
+p {
+    margin-bottom: 10px;
+    display: block;
+}
+
+p {
+    line-height: 1.5;
+
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.normal,
+.italic,
+.bold {
+    margin-bottom: 0;
+}
+
+.margin {
+    margin: 0;
+}
+
+.padding-left {
+    padding-left: 10px;
+}
+
+footer {
+    padding: 2em 0;
+    background-color: #202833;
+}
+
+
+.footerLogo {
+    width: 120px;
+    margin-left: 0;
+}
+
+.footerFlexContainer {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+
+.footerFlexItems {
+    display: flex;
+    align-items: center;
+}
+
+.flexInnerChild {
+    display: flex;
+    align-items: center;
+}
+
+.footerFlexItems .flexInnerChild>a>img {
+    padding-right: 10px;
+    width: 30px;
+}
+
+.footerFlexItems .flexInnerChild:first-child {
+    padding-right: 40px;
+}
+
+.footerLink {
+    color: #fff;
+    display: block;
+    font-size: .85rem;
+    text-decoration: none;
+}
+
+.arrowUp {
+    padding-top: 45px;
+    width: 25px;
+}
+
+.toTop {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0 30px;
+    font-weight: bold;
+}
+
+.footerCopy {
+    color: #fff;
+    text-align: center;
+}
+
+/* margin end */
+
+
+/* header */
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.burgerMenu {
+    color: #fff !important;
+    text-align: right;
+}
+
+.burgerMenu>span {
+    color: #fff !important;
+    font-size: 30px;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+header>.mainNav {
+    padding: 5px 0;
+    /* flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header>.mainNav>.logoContainer>a>.logo {
+    width: 60px;
+    padding-top: 5px;
+}
+
+header>.mainNav>.navLinksContainer {
+    list-style-type: none;
+}
+
+header>.mainNav>.navLinksContainer>li {
+    display: inline-block;
+}
+
+header>.mainNav>.navLinksContainer>li>.navLinks,
+header>.mainNav>div>.navLinksContainer>li>.navLinks {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+header>.mainNav>div {
+    position: relative;
+    flex-basis: 50%;
+}
+
+header>.mainNav>div>.navLinksContainer {
+    position: absolute;
+    list-style-type: none;
+    background-color: #202833;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    right: -30px;
+    padding: 20px;
+}
+
+header>.mainNav>div>.navLinksContainer>li {
+    padding: 10px 0 10px;
+}
+
+header>.mainNav>.navLinksContainer>li>.navLinks:first-child {
+    padding-right: 45px;
+}
+
+header>.mainNav>.navLinksContainer>li>.navLinks:hover {
+    color: #66FCF1;
+}
+
+/* main */
+main>.container>.flexContainer>.flexItems:last-child {
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+}
+
+
+main>.container>.flexContainer {
+    height: 100vh;
+}
+
+.flexContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.flexContainer>.flexItems {
+    flex-basis: 50%;
+    padding: 0 10px;
+}
+
+h1 {
+    font-size: 2.188rem;
+    margin-bottom: 15px;
+}
+
+.linksContainer {
+    margin-top: 20px;
+}
+
+.linksContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.linksContainer .collegeLink {
+    text-decoration: none;
+    background-color: #45A29F;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    flex-basis: 25%;
+    text-align: center;
+    border: 1px solid #45A29F;
+}
+
+.linksContainer .collegeLink:hover {
+    transition: .5s ease-out;
+    background-color: #fff;
+    color: #45A29F;
+}
+
+.linksContainer .collegeLink:first-child {
+    margin-right: 10px;
+    background-color: #fff;
+    color: #45A29F;
+}
+
+.linksContainer .collegeLink:first-child:hover {
+    background-color: #45A29F;
+    color: #fff;
+}

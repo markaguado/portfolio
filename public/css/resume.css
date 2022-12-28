@@ -1,0 +1,122 @@
+/* ---------------------
+Mark Anthony Jr Aguado
+Assignment 1
+Style for Resume Page
+------------------------*/
+
+.firstFold,
+.thirdFold,
+.fifthFold {
+    background-color: #C6C8C9;
+}
+
+.secondFold,
+.thirdFold,
+.fourthFold,
+.fifthFold {
+    padding: 3em 0;
+}
+
+.firstFold .flexItemsCustom:first-child {
+    flex-basis: 60%;
+}
+
+
+.firstFold {
+    background-image: url(../img/custom-photo.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 900px;
+    background-position-y: top;
+    background-size: 45%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* second fold */
+
+.subHeading {
+    font-size: 1.563rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.secondFold .flexContainer {
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.secondFold .skillsFlex .flexItemsCustom {
+    flex-basis: 30%;
+}
+
+.flexItemsCustom:last-child .resumeList>li .italic {
+    font-style: normal;
+}
+
+
+.resumeList {
+    list-style-type: none;
+}
+
+.resumeList>li {
+    padding-bottom: 10px;
+}
+
+/* third fold */
+
+.thirdFold .flexItemsCustom:first-child {
+    flex-basis: 30%;
+}
+
+.thirdFold .flexItemsCustom:last-child {
+    flex-basis: 70%;
+}
+
+.projectLink {
+    display: block;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* fourth fold */
+
+.fourthFold .flexItemsCustom:first-child {
+    flex-basis: 70%;
+}
+
+.fourthFold .flexItemsCustom:last-child {
+    flex-basis: 30%;
+
+}
+
+/* fifth fold */
+
+.fifthFold {
+    padding: 3em 0;
+}
+
+.fifthFold .thumbnailContainer {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fifthFold .thumbnailContainer .thumbnailItems {
+    padding: 15px;
+    flex-basis: 30%;
+}
+
+.fifthFold .thumbnailContainer .thumbnailItems .labTitle {
+    font-weight: 700;
+    margin: 15px 0;
+    display: block;
+}
+
+
+.personalPhoto {
+    width: 70%;
+}

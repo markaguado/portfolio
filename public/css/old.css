@@ -1,0 +1,363 @@
+.custom-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.img-fluid {
+    max-width: 100% !important;
+    height: auto;
+}
+
+.section-padding-base {
+    padding: 3em 0;
+}
+
+.content-xl {
+    font-size: 2.125rem !important;
+}
+
+.content-lg {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.cstm-clr {
+    color: #fff;
+    font-weight: 700;
+}
+
+.content-sm {
+    color: #fff;
+    font-size: 1.125rem;
+}
+
+.slick-prev {
+    left: -45px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 40px !important;
+    color: #fff !important;
+}
+
+.slick-dots li button:before {
+    font-size: 16px !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #fff !important;
+}
+
+.mark-nav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 120px;
+    position: relative;
+}
+
+.mark-nav .logo-mark {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.mark-nav .logo-mark>a {
+    color: #000;
+}
+
+
+.mark-nav .menu-expanded ul {
+    padding: 0;
+    transition: all 0s;
+    position: relative;
+    left: 0;
+    z-index: 2;
+    list-style-type: none;
+}
+
+.mark-nav .menu-expanded a {
+    transition: all 0.15s;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 5px;
+    color: #fff !important;
+    display: block;
+}
+
+.mark-nav .menu-expanded a:hover {
+    background-color: #fff;
+    transition: all 0.15s;
+    letter-spacing: 2px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.mark-nav .menu-expanded .bar {
+    background-color: transparent;
+    transition: all 0.25s;
+    z-index: 99999;
+}
+
+.mark-nav .menu-expanded .bar:before {
+    transform: rotate(45deg);
+}
+
+.mark-nav .menu-expanded .bar:after {
+    transform: rotate(-45deg);
+}
+
+.mark-f1 {
+    height: 450px;
+    position: relative;
+}
+
+.mark-f1 .button-holder {
+    position: absolute;
+    bottom: 30%;
+    display: flex;
+}
+
+.mark-f1 .button-holder .button-item:first-child {
+    margin-right: 30px;
+}
+
+.mark-f1 .button-holder .button-item:last-child .mark-button {
+    background-color: #fff;
+    color: #fff;
+}
+
+.mark-f1 .button-holder .button-item:last-child .mark-button:hover {
+    transition: 0.5s ease-out;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none !important;
+}
+
+.mark-f1 .button-holder .button-item .mark-button {
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-size: 1.125rem;
+    padding: 15px 50px;
+    display: block;
+    text-transform: uppercase;
+    width: 220px;
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+}
+
+.mark-f1 .button-holder .button-item .mark-button:hover {
+    transition: 0.5s ease-out;
+    background-color: #fff;
+    color: #fff;
+    text-decoration: none !important;
+}
+
+.mark-f2 {
+    background-color: #202833;
+    padding-top: 4em;
+}
+
+.mark-f2 .flex-container {
+    flex-wrap: wrap;
+    padding: 20px 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.mark-f2 .flex-container .flex-items {
+    padding: 30px 10px;
+}
+
+.mark-f2 .flex-container .flex-items .img-holder {
+    background-color: #fff;
+    height: 420px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.mark-f2 .flex-container .flex-items .link-holder {
+    background-color: #fff;
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mark-f2 .flex-container .flex-items .link-holder>a {
+    font-size: 1.125rem;
+    color: #202833;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.mark-f3 {
+    height: 420px;
+    background-color: #fff;
+}
+
+.mark-f3 .skills-slider {
+    margin: 0;
+    list-style-type: none;
+    padding: 2em 0;
+}
+
+.mark-f3 .skills-slider .slick-prev,
+.mark-f3 .skills-slider .slick-prev:before,
+.mark-f3 .skills-slider .slick-next:before {
+    display: none;
+}
+
+.mark-f4 {
+    height: 90vh;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mark-f4 .cta-holder {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.mark-f4 .cta-holder .cta-button {
+    background-color: #fff;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-size: 1.125rem;
+    padding: 15px 50px;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+.mark-f4 .cta-holder .cta-button:hover {
+    transition: 0.5s ease-out;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none !important;
+}
+
+.sec-title {
+    font-weight: 700;
+}
+
+.color-bl {
+    color: #202833;
+}
+
+.page-maintenance {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.page-maintenance>h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #fff;
+    border-bottom: 16px solid #fff;
+    width: 90px;
+    height: 90px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.footer {
+    background-color: #F2F2F2;
+}
+
+.footer .copyright {
+    text-align: center;
+    margin: 0;
+    padding: 2em 0;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+
+    .slick-next,
+    .slick-prev {
+        display: none !important;
+    }
+
+    .mark-nav .menu-expanded {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        line-height: unset;
+        justify-content: center;
+    }
+
+    .mark-f1 {
+        height: auto;
+    }
+
+    .mark-f1 .button-holder {
+        position: relative !important;
+        padding: 2em 0;
+    }
+}
+
+@media (max-width: 576px) {
+
+
+
+    .mark-nav .menu-collapsed .bar {
+        right: 25px;
+    }
+
+    .mark-f1 .button-holder {
+        flex-wrap: wrap;
+    }
+
+    .mark-f1 .button-item:first-child {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .mark-f2 .flex-container .flex-items .img-holder {
+        height: 350px;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */

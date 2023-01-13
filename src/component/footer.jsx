@@ -32,14 +32,14 @@ class Footer extends Component {
                 <div className="container">
                     <ul className="footerFlexContainer">
                         <li className="footerFlexItems">
-                            <img src="img/logo-1-white.png" alt="Mark Logo" className="imgDefault footerLogo" />
+                            <img src="portfolio/img/logo-1-white.png" alt="Mark Logo" className="imgDefault footerLogo" />
                         </li>
 
                         <li className="footerFlexItems">
                             <div className="flexInnerChild">
                                 <a href="https://markaguado.github.io/portfolio"
                                     className="footerLink">
-                                    <img src="img/github-logo.png" alt="Github Logo" />
+                                    <img src="portfolio/img/github-logo.png" alt="Github Logo" />
                                 </a>
                                 <a href="https://markaguado.github.io/portfolio"
                                     className="footerLink">
@@ -49,7 +49,7 @@ class Footer extends Component {
                             <div className="flexInnerChild">
                                 <a href="https://www.linkedin.com/in/mark-aguado/"
                                     className="footerLink">
-                                    <img src="img/linkedin-logo.png" alt="LinkedIn Logo" />
+                                    <img src="portfolio/img/linkedin-logo.png" alt="LinkedIn Logo" />
                                 </a>
                                 <a href="https://www.linkedin.com/in/mark-aguado/"
                                     className="footerLink">
@@ -64,7 +64,7 @@ class Footer extends Component {
                     <hr />
 
                     <a href="#introduction" className="up nav-link" >
-                        <img href="#introduction" src="img/top-logo.png" alt="Arrow up" className="imgDefault arrowUp nav-link" onClick={this.handleClick} />
+                        <img href="#introduction" src="portfolio/img/top-logo.png" alt="Arrow up" className="imgDefault arrowUp nav-link" onClick={this.handleClick} />
                     </a>
 
                     <a href="#introduction" className="toTop up nav-link" onClick={this.handleClick}>

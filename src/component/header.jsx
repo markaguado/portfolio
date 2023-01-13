@@ -71,7 +71,7 @@ class Header extends Component {
                 <nav id="navigation" className="mainNav">
                     <div className="logoContainer">
                         <a href="#introduction" className="navLinks" onClick={this.handleClick}>
-                            <img src="img/logo-1-white.png"
+                            <img src="portfolio/img/logo-1-white.png"
                                 alt="Mark Aguado Logo" href="#introduction" className="logo navLinks" onClick={this.handleClick} />
                         </a>
                     </div>

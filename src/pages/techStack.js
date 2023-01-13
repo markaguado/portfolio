@@ -1,59 +1,59 @@
 export const techStack = [
     {
         id: 1,
-        techImg: 'img/icons/angular.svg',
+        techImg: 'portfolio/img/icons/angular.svg',
         techAlt: 'Angular',
     }, {
         id: 2,
-        techImg: 'img/icons/bitbucket.svg',
+        techImg: 'portfolio/img/icons/bitbucket.svg',
         techAlt: 'BitBucket',
     }, {
         id: 3,
-        techImg: 'img/icons/css.svg',
+        techImg: 'portfolio/img/icons/css.svg',
         techAlt: 'CSS',
     }, {
         id: 4,
-        techImg: 'img/icons/drupal.svg',
+        techImg: 'portfolio/img/icons/drupal.svg',
         techAlt: 'Drupal',
     }, {
         id: 5,
-        techImg: 'img/icons/git.svg',
+        techImg: 'portfolio/img/icons/git.svg',
         techAlt: 'Git',
     }, {
         id: 6,
-        techImg: 'img/icons/html.svg',
+        techImg: 'portfolio/img/icons/html.svg',
         techAlt: 'HTML',
     }, {
         id: 7,
-        techImg: 'img/icons/javascript.svg',
+        techImg: 'portfolio/img/icons/javascript.svg',
         techAlt: 'Javascript',
     }, {
         id: 8,
-        techImg: 'img/icons/jira.svg',
+        techImg: 'portfolio/img/icons/jira.svg',
         techAlt: 'Jira',
     }, {
         id: 9,
-        techImg: 'img/icons/opencart.svg',
+        techImg: 'portfolio/img/icons/opencart.svg',
         techAlt: 'Opencart',
     }, {
         id: 10,
-        techImg: 'img/icons/php.svg',
+        techImg: 'portfolio/img/icons/php.svg',
         techAlt: 'PHP',
     }, {
         id: 11,
-        techImg: 'img/icons/react.svg',
+        techImg: 'portfolio/img/icons/react.svg',
         techAlt: 'React JS',
     }, {
         id: 12,
-        techImg: 'img/icons/sass.svg',
+        techImg: 'portfolio/img/icons/sass.svg',
         techAlt: 'Sass',
     }, {
         id: 13,
-        techImg: 'img/icons/trello.svg',
+        techImg: 'portfolio/img/icons/trello.svg',
         techAlt: 'Trello',
     }, {
         id: 14,
-        techImg: 'img/icons/wordpress.svg',
+        techImg: 'portfolio/img/icons/wordpress.svg',
         techAlt: 'Wordpress',
     }
 ]

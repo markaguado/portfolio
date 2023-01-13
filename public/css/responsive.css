@@ -204,6 +204,14 @@ header>.mainNav,
  mobile phone size 
 ---------------------*/
 @media screen and (max-width: 576px) {
+    .wrapper-images {
+        flex-basis: 100% !important;
+    }
+
+    main>.container>.flexContainer>.flexItems:last-child {
+        display: none;
+    }
+
     header>.mainNav>div>.navLinksContainer {
         right: -19px !important;
     }

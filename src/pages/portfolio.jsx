@@ -1,6 +1,10 @@
 import Slider from 'react-slick';
 import { sampleWorks } from './sampleWorks';
 import { techStack } from './techStack';
+import Fancy from '../component/fancy';
+
+
+
 
 
 function Portfolio() {
@@ -68,9 +72,12 @@ function Portfolio() {
     };
 
 
+
     return (
 
         <div>
+
+
             <section className="section-padding-base mark-f2" id="portfolio">
                 <div className="custom-container">
 
@@ -78,7 +85,7 @@ function Portfolio() {
                         My Portfolio
                     </p>
                     <p className="content-sm">
-                        Being a developer, I have developed/maintain these wonderful projects that helped their business reached their clients seamlessly. I have also developed lots of landing pages with different kinds of layout and they are responsive from desktop to mobile, you may see it <a href="landing-pages.html" className="cstm-clr">here</a>.
+                        Being a developer, I have developed/maintain these wonderful projects that helped their business reached their clients seamlessly. I have also developed lots of landing pages with different kinds of layout and they are responsive from desktop to mobile.
                     </p>
 
                     <ul className="flex-container image-slider">
@@ -105,6 +112,12 @@ function Portfolio() {
                 </div>
             </section>
 
+            <section className="fancySec">
+                <div className="custom-container">
+                    <Fancy />
+                </div>
+            </section>
+
             <section className="section-padding-base mark-f3" id="skills">
                 <div className="custom-container">
                     <p className="content-lg cstm-clr sec-title color-bl">
@@ -128,6 +141,9 @@ function Portfolio() {
                     </ul>
                 </div>
             </section>
+
+
+
 
         </div>
     );

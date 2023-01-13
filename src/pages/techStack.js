@@ -1,59 +1,59 @@
 export const techStack = [
     {
         id: 1,
-        techImg: 'portfolio/img/icons/angular.svg',
+        techImg: 'img/icons/angular.svg',
         techAlt: 'Angular',
     }, {
         id: 2,
-        techImg: 'portfolio/img/icons/bitbucket.svg',
+        techImg: 'img/icons/bitbucket.svg',
         techAlt: 'BitBucket',
     }, {
         id: 3,
-        techImg: 'portfolio/img/icons/css.svg',
+        techImg: 'img/icons/css.svg',
         techAlt: 'CSS',
     }, {
         id: 4,
-        techImg: 'portfolio/img/icons/drupal.svg',
+        techImg: 'img/icons/drupal.svg',
         techAlt: 'Drupal',
     }, {
         id: 5,
-        techImg: 'portfolio/img/icons/git.svg',
+        techImg: 'img/icons/git.svg',
         techAlt: 'Git',
     }, {
         id: 6,
-        techImg: 'portfolio/img/icons/html.svg',
+        techImg: 'img/icons/html.svg',
         techAlt: 'HTML',
     }, {
         id: 7,
-        techImg: 'portfolio/img/icons/javascript.svg',
+        techImg: 'img/icons/javascript.svg',
         techAlt: 'Javascript',
     }, {
         id: 8,
-        techImg: 'portfolio/img/icons/jira.svg',
+        techImg: 'img/icons/jira.svg',
         techAlt: 'Jira',
     }, {
         id: 9,
-        techImg: 'portfolio/img/icons/opencart.svg',
+        techImg: 'img/icons/opencart.svg',
         techAlt: 'Opencart',
     }, {
         id: 10,
-        techImg: 'portfolio/img/icons/php.svg',
+        techImg: 'img/icons/php.svg',
         techAlt: 'PHP',
     }, {
         id: 11,
-        techImg: 'portfolio/img/icons/react.svg',
+        techImg: 'img/icons/react.svg',
         techAlt: 'React JS',
     }, {
         id: 12,
-        techImg: 'portfolio/img/icons/sass.svg',
+        techImg: 'img/icons/sass.svg',
         techAlt: 'Sass',
     }, {
         id: 13,
-        techImg: 'portfolio/img/icons/trello.svg',
+        techImg: 'img/icons/trello.svg',
         techAlt: 'Trello',
     }, {
         id: 14,
-        techImg: 'portfolio/img/icons/wordpress.svg',
+        techImg: 'img/icons/wordpress.svg',
         techAlt: 'Wordpress',
     }
 ]

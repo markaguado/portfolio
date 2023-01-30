@@ -36,7 +36,7 @@ class Footer extends Component {
                         </li>
 
                         <li className="footerFlexItems">
-                            <div className="flexInnerChild">
+                            {/* <div className="flexInnerChild">
                                 <a href="https://markaguado.github.io/portfolio"
                                     className="footerLink">
                                     <img src="img/github-logo.png" alt="Github Logo" />
@@ -45,7 +45,7 @@ class Footer extends Component {
                                     className="footerLink">
                                     https://markaguado.github.io/portfolio
                                 </a>
-                            </div>
+                            </div> */}
                             <div className="flexInnerChild">
                                 <a href="https://www.linkedin.com/in/mark-aguado/"
                                     className="footerLink">

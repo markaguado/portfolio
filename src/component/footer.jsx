@@ -32,7 +32,7 @@ class Footer extends Component {
                 <div className="container">
                     <ul className="footerFlexContainer">
                         <li className="footerFlexItems">
-                            <img src="img/logo-1-white.png" alt="Mark Logo" className="imgDefault footerLogo" />
+                            <img src="img/logo-1-white.png" loading="lazy" alt="Mark Logo" className="imgDefault footerLogo" />
                         </li>
 
                         <li className="footerFlexItems">

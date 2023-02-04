@@ -85,7 +85,7 @@ function Portfolio() {
                         My Portfolio
                     </p>
                     <p className="content-sm">
-                        Being a developer, I have developed/maintain these wonderful projects that helped their business reached their clients seamlessly. I have also developed lots of landing pages with different kinds of layout and they are responsive from desktop to mobile.
+                        As a front-end developer, I have a proven track record of delivering successful projects that have enabled my clients to effectively reach their target audience. My portfolio showcases a range of projects, including the development and maintenance of engaging and user-friendly websites. In addition, I have extensive experience creating responsive landing pages with a variety of layouts, ensuring optimal viewing experiences across different devices, including desktop and mobile.
                     </p>
 
                     <ul className="flex-container image-slider">
@@ -94,7 +94,7 @@ function Portfolio() {
                                 <div className="slick-con" key={item.id}>
                                     <li className="flex-items">
                                         <div className="img-holder">
-                                            <img src={item.imageLink} className="img-fluid" alt={item.title} />
+                                            <img src={item.imageLink} className="img-fluid" loading="lazy" alt={item.title} />
                                         </div>
                                         <div className="link-holder">
                                             <a href={item.webLink}>
@@ -131,7 +131,7 @@ function Portfolio() {
                             {techStack.map((item) => (
                                 <li className="skills-items" key={item.id}>
                                     <div className="img-holder">
-                                        <img src={item.techImg} alt={item.techAlt} className="img-fluid" />
+                                        <img src={item.techImg} alt={item.techAlt} className="img-fluid" loading="lazy" />
                                     </div>
                                 </li>
                             ))}

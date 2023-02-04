@@ -34,7 +34,7 @@ class Body extends Component {
                             </div>
                         </div>
                         <div className="flexItems">
-                            <img src={`img/mark.png`} alt="" className="personalPhoto imgDefault" />
+                            <img src={`img/mark.png`} alt="" className="personalPhoto imgDefault" loading="lazy" />
                         </div>
                     </div>
                 </div>

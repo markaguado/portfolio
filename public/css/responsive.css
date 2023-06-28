@@ -1,10 +1,3 @@
-/* ---------------------
-Mark Anthony Jr Aguado
-Assignment 1
-Media Queries
-------------------------*/
-
-
 /* margin */
 
 header>.mainNav,
@@ -19,7 +12,8 @@ header>.mainNav,
 @media only screen and (min-width: 1700px) {
 
     header>.mainNav,
-    .container {
+    .container,
+    .custom-container {
         max-width: 1320px;
     }
 
@@ -28,7 +22,7 @@ header>.mainNav,
     }
 
     main>.container>.flexContainer {
-        height: 90vh !important;
+        height: 800px !important;
     }
 }
 
